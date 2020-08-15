@@ -1,0 +1,349 @@
+/* add css */
+.padding-tb10{
+    padding: 10px 0;
+}
+/* add css */
+
+.search-woman{
+    background-color: #e3e3e3;
+    padding: 10px 10px;
+}
+.search-woman h2{
+    color:#000;
+    font-weight: bold;
+    font-size: 20px;   
+}
+
+
+.search-woman-title{
+    background-color: #fff;
+}
+.search{
+    border: 2px solid #999;
+    width: 100%;
+    height: 38px;
+    border-radius: 3px;
+}
+.search-btn{
+    border: 2px solid #999;
+    box-sizing: border-box;
+    height: 38px;
+    margin-left: -3px !important;
+}
+.search-woman-title h2{
+    padding: 10px 10px;
+
+    margin: 0;
+}
+.input-group{
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+.group-type{
+    display: flex;
+    align-items: center;
+
+    background-color: #fff;
+}
+.group-type h3{
+    width: 100%;
+    text-align: center;
+    color:#000;
+    font-size: 20px;
+}
+#sel1{
+    border: 2px solid #999;
+}
+
+.group-area label{
+    margin: 10px 10px;
+}
+.group-area h3{
+    margin: 0;
+    text-align: left;
+
+}
+
+/* bj create css */
+
+.sub-checkbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub-nav-li {
+    padding: 10px;
+}
+
+.del-action {
+    border: none;
+    line-height: 100%;
+}
+
+.del-action:hover {
+    border: none !important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border: none !important;
+}
+
+.sub-ul-box {
+    display: flex
+}
+
+.sub-ul-box li {
+    width: 25%;
+    cursor: pointer;
+}
+
+.box-set{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px !important;
+    margin: 50px 0;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;   
+}
+
+.box1, .box2, .box3 {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.box1-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.photo-box1, .photo-box2, .photo-box3  {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.post-num{
+    margin-top: 30px;
+}
+
+.post-num ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-num li{
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+}
+.post-active{
+    background-color: #000;
+    color:#fff;
+}
+.cast-frame{
+    background-color: #fafafa;
+    padding: 5px 5px;
+    border: 1px solid #e5e5e5;
+}
+
+.photo-box1,.photo-box2,.photo-box3{
+    margin: 10px 0;
+}
+.photo-box-bor img{
+    transition: all 0.3s;
+}
+
+.photo-box-bor img:hover{
+    opacity: 0.8;
+}
+
+.cast-section {
+    letter-spacing: -1;
+    line-height: 1.5;
+    color: #000;
+}
+
+.cast-name {
+    font-weight: bold;
+    letter-spacing: -1;
+}
+
+.cast-size {
+    font-size: 12px;
+    letter-spacing: -1;
+    border-bottom: 1px dotted #000;
+}
+
+.cast-shop-name {
+    font-size: 12px;
+}
+
+.content-title {
+    font-weight: bold;
+    position: relative;
+    padding: 25px 0px;
+    line-height: 24px;
+    border-bottom: 1px solid #d2d2d2;
+    color: #111;
+}
+
+.content-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 4px solid #eaeaea;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.content-str {
+    font-size: 24px !important;
+    /* margin-left: 10px; */
+    color: #111;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.content-sp {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+}
+
+.content-s {
+    font-size: 14px;
+}
+
+@media (max-width:767px) {
+    .box-set {
+        display: block;
+    }
+
+    .box1, .box2, .box3 {
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #eee;
+        margin: 10px 0;
+    }
+
+    .box1-head {
+        display: flex;
+        justify-content: center;
+    }
+
+    .photo-box-bor {
+        width: 180px;
+    }
+}
+
+
+
+
+.sch {
+    margin: 70px 0 50px 0;
+}
+.sch-boxall {
+    display: flex;
+    text-align: center;
+}
+
+.sch-boxset {
+    display: flex;
+    width: 100%;
+}
+
+.sch-box {
+    width: 100%;
+    border: 1px solid #eee;
+    margin: 3px 3px ;
+    cursor: pointer;
+}
+
+.sch-box:hover {
+    color: #e91e63;
+}
+
+.sch-line {
+    margin: 0 auto;
+    width: 98%;
+    height: 5px;
+    border-radius: 15px;
+    background-color: #ccc;
+}
+
+.sch-line.active {
+    background-color: #e91e63 ;
+}
+
+.content-tt {
+    font-size:18px;
+    color: #111;
+    font-weight: 500;
+}
+
+
+
+@media (max-width:767px) {
+    .sch-boxall {
+        display: block;
+    }
+}
+
+.cast-section {
+    cursor: pointer;
+}
+
+.attendance {
+    background-color: rgba(216,21,21,0.8);
+    border-radius: 2px;
+}
+
+.time{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1.5;
+}
+
+.cast-state-icon {
+    background-color: #1e73be;
+    border-radius: 2px;
+}
+
+.cast-state-icon span {
+    color: #fff;
+}
+/* bj create css */
+.box-set .box1 .box1-head>div{
+    padding: 0 30px;
+}
+.box1-content{
+    line-height: 22px;
+}
+.box1-content a{
+    color: #000;
+}
+.box-set .box2 strong {
+    font-size: 24px;
+    color: #e50039;
+    font-weight: 800;
+}
+
+.box-set .box3{
+    color: #fff;
+    background-color: #d5452f;
+    border-color: #d5452f;
+}
