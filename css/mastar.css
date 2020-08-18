@@ -567,3 +567,17 @@ footer{
         display: none
     }
 }
+@media(max-width:568px){
+    .mark .caption{
+        padding: 1em 0;
+    }
+    footer>.container #footer-caption,
+    footer>.container .search-title,
+    footer>.container .pref-area-wrap,
+    footer #footer-navigation{
+        display: none;
+    }
+    #footer-copy-right{
+        padding: 0 !important;
+    }
+}

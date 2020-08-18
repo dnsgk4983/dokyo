@@ -7991,9 +7991,9 @@ footer .nav li a{
 .navbar-nav>li {
     float: none;
     
-}
+    }
 .navbar-nav{
     display: flex;
     justify-content: space-between;
-}
+    }
 }

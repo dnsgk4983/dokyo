@@ -168,7 +168,6 @@
 
 .cast-section {
     letter-spacing: -1;
-    line-height: 1.5;
     color: #000;
 }
 
@@ -462,6 +461,9 @@
     color: #fff;
 }
 
+.shop-list{
+    margin-bottom: 30px;
+}
 .shop-list .col-sm-12{
     padding: 0;
 }
@@ -472,7 +474,7 @@
     padding: 1rem 2rem;
     border: 1px solid #999;
     border-top: 3px solid #e91e63;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
 }
 .shop-list-item h3{
     font-size: 2rem;
@@ -501,9 +503,12 @@
     color: #fff;
 }
 
+.shop-title{
+    margin: 15px 0 !important;
+}
 
-.shop-list-info{
-    border: 1px solid #999;
+.shop-list-info>.row{
+    margin: 0;
 }
 .shop-list-info .col-sm-3,
 .shop-list-info .col-sm-9{
@@ -560,8 +565,191 @@
     background: #888;
     margin: 0 5px;
 }
+
+
+.shop-list-info>.row{
+    border: 1px solid #999;
+    border-top: none;
+}
+
+.shop-detail-wrap{
+    margin-top: .8rem;
+    margin-left: .5rem;
+}
+.shop-detail-wrap .row{
+    margin: 0;
+}
+.shop-lead{
+    margin-bottom: 10px;
+}
+.shop-lead p{
+    font-size: 18px;
+    color: #000;
+}
+.shop-check-icon span{
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: .1rem .5rem;
+}
+
+.shop-button-wrap{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+.shop-info{
+    display: flex;
+}
+.shop-info .info{
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 30px 0 0;
+}
+.shop-info .info i{
+    padding: .3rem;
+    color: #fff;
+    background: linear-gradient(to right bottom,#f953c6,#b91d73);
+    border: 1px solid rgba(51,51,51,.4);
+    margin-right: 5px;
+}
+
+.shop-price-featured{
+    width: 40%;
+    margin-left: 15rem;
+    text-align: center;
+    border: 1px solid #ec407a;
+}
+.featured-title{
+    padding: 0 30px;
+    background: #ec407a;
+    color: #fff;
+}
+.featured-content{
+    display: flex;
+    flex-direction: column;
+}
+.featured-content-item{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.featured-content-item del span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.featured-content-item i{
+    margin: 0 10px;
+    margin-top: 5px;
+}
+.featured-content-item p{
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff0000;
+}
+
+.shop-pickup{
+    display: flex;
+}
+.shop-pickup .col-sm-12:nth-child(2){
+    margin-left: -30px;
+}
+.shop-pickup ul{
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+}
+.shop-pickup ul>li{
+    margin: 0 .3rem;
+}
+.shop-pickup ul>li img{
+    position: relative;
+}
+.shop-pickup ul>li .cast-section{
+    position: absolute;
+    width: 78px;
+    text-align: center;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.shop-pickup ul>li .cast-section span{
+    font-size: 14px;
+}
+.shop-pickup ul>li>a:hover img{
+    opacity: .8;
+}
 @media (max-width: 568px){
     .shop-cont-item ul>li{
         width: 50%;
     }
+    
+    .shop-info-left{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .shop-main-status{
+        margin-left: 11rem;
+    }
+    .shop-info-left img{
+        width: 80%;
+    }
+    .shop-detail-wrap{
+        padding: 0 30px 30px;
+    }
+    .shop-pickup{
+        flex-direction: column;
+    }
+    .shop-pickup .col-sm-12:nth-child(2){
+        margin-left: 0px;
+    }
+    .shop-pickup ul{
+        margin-top: 0;
+    }
+    .shop-pickup .col-sm-12:nth-child(2) ul{
+        margin-top: 15px;
+    }
+    .shop-button-wrap{
+        flex-direction: column;
+    }
+    .shop-price-featured{
+        width: 70%;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .shop-info .info{
+        padding: 0 30px;
+    }
+}
+
+
+
+/* rightnow */
+.rightnow-title p{
+    text-align: center;
+}
+
+/* value */
+.value-title{
+    margin: 30px 0;
+    text-align: center;
+    color: #3c5e9c;
+}
+.value-title-caption{
+    text-align: right;
+    margin-bottom: 10px !important;
+}
+.value-list-title{
+    display: flex;
+}
+.value-title-item{
+    margin-left: 5px;
+}
+.value-info{
+    display: block;
+}
+.value-info .info{
+    margin: 5px 0;
+}
+.info-yen i, .info-marker i {
+    padding: .5rem !important;
 }
