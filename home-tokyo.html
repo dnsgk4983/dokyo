@@ -167,7 +167,7 @@
 
                     <div id="headerNav" class="navbar-collapse collapse float--left">
                         <!-- Header Menu Links Start -->
-                        <ul class="header--menu-links nav navbar-nav main-navi-target" data-trigger="hoverIntent">
+                        <ul class="header--menu-links nav navbar-nav main-navi-target">
                             <li class="active">
                                
                                 <a href="home-tokyo.html"><i class="fas fa-home"></i>東京TOP</a>
@@ -182,23 +182,35 @@
                                 <a href="newface.html"><i class="far fa-bookmark"></i>ニューフェイス</a>
                             </li>
                             <li>
-                                <a href="schedule.html"><i class="far fa-clock"></i>出勤検索</a>
+                                <a href="schedule.html"><i class="far fa-clock"><span>999+</span></i>出勤検索</a>
                             </li>
                             <li>
-                                <a href="rightnow.html"><i class="far fa-hourglass"></i>今スグ!</a>
+                                <a href="rightnow.html"><i class="far fa-hourglass"><span>999+</span></i>今スグ!</a>
                             </li>
                             <li class="posts">
                                 <a href="news.html"><i class="far fa-comments"></i>お店速報</a>
 
                             </li>
-                            <li>
-                                <a href="value.html"><i class="fas fa-trophy"></i>ランキング</a>
+                            <li class="nav-rank">
+                                <a href="value.html"><i class="fas fa-trophy"><span>999+</span></i>ランキング
+                                    <ul class="main-sub-nav" id="nav-select">                           
+                                        <li>
+                                            <a href="#">店舗ランキング</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">キャストランキング</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">写メ日記アクセスランキング</a>
+                                        </li>
+                                    </ul>
+                                </a>
                             </li>
                             <li><a href="#"><i class="fas fa-mobile-alt"></i>写メ日記 </a>
                             </li>
                             <li><a href="#"><i class="fas fa-film"></i>投稿動画 </a>
                             </li>
-                            <li><a href="#"><i class="fas fa-user"></i>クチコミ </a>
+                            <li><a href="#"><i class="fas fa-user"><span>999+</span></i>クチコミ </a>
                             </li>
                             <li><a href="#"><i class="fas fa-calendar-alt"></i>イベント </a>
                             </li>
@@ -208,8 +220,6 @@
                     </ul>
                     <!-- Header Menu Links End -->
                 </div>
-
-              
                 <!-- Header Search Form End -->
             </div>
         </div>
@@ -218,15 +228,22 @@
     <!-- Header Section End -->
 
    
-
-   
-
+<div class="navbar-header" style="width: 1903px;margin-bottom: 30px;">
+   <div class="container main-navi">
+            <div>
+                <a href="#">
+                    <p>デリヘルパーク</p>
+                </a>
+                <i class="fa fa-angle-right"></i>
+                <p>東京</p>
+            </div>
+        </div>
+    </div>
     <!-- Main Content Section Start -->
     <div class="main-content--section pbottom--30">
         <div class="container">
             <!-- Main Content Start -->
-            <div class="main--content">
-                
+            <div class="main--content">        
                 <!-- Post Items Start -->
                 <div class="post--items post--items-1 pd--30-0">
                     <div class="row gutter--15">
@@ -515,8 +532,8 @@
                         <div class="post--items-title" data-ajax="tab">
                             <h2 class="h4  text-center">キャストランキング</h2>
                         </div>
-                        <div class="post--items post--items-3" data-ajax-content="outer">
-                            <ul class="nav" data-ajax-content="inner">
+                        <div class="post--items post--items-3">
+                            <ul class="nav">
                                 <li>
                                     <!-- Post Item Start -->
                                     <div class="post--item post--layout-1">
@@ -528,8 +545,8 @@
                                             </a>
 
                                             <div class="post--info">
+                                           
                                                
-                                                   
                                                 <div class="title">
                                                     <h3>花</h3>
                                                     <h3 class="h4">
@@ -676,8 +693,8 @@
                                             </a>
 
                                             <div class="post--info">
+                                           
                                                
-                                                   
                                                 <div class="title">
                                                     <h3>花</h3>
                                                     <h3 class="h4">
@@ -820,10 +837,11 @@
                     <div class="sticky-content-inner">
                         <div class="row">
                             <!-- World News Start -->
-                            <div class="col-md-12 ptop--30 pbottom--30">
+                            <div class="col-md-12 pbottom--30">
                                 <div class="news-title">
-                                    <h3>最新お店速報</h3>
-                                    <p>東京のデリヘル掲載店からの最新情報。</p>
+                                    <h3>最新お店速報
+                                        <p>東京のデリヘル掲載店からの最新情報</p>
+                                    </h3>
                                 </div>
                                 <ul class="nav nav-tabs ad-tab">
                                     <li class="active"><a data-toggle="tab" href="#home">一覧</a></li>
@@ -1196,756 +1214,199 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="news-button">
+                                    <button>もっと見る<i class="fa fa-chevron-circle-right"></i></button>
+                                </div>
                             </div>
                             <!-- World News End -->
 
-                            <!-- Technology Start -->
-                             
-                            <!-- Technology End -->
-
-                            <!-- Ad Start -->
-                            <div class="col-md-12 ptop--30 pbottom--30">
-                               
-                            </div>
-                            <!-- Ad End -->
-
                             <!-- ニューフェイス Start -->
-                            <div class="col-md-6 ptop--30 pbottom--30">
+                            <div class="col-sm-12 pbottom--30 main-new-face">
                                 <!-- Post Items Title Start -->
-                                <div class="post--items-title" data-ajax="tab">
+                                <div class="post--items-title main-new-face-title">
                                     <h2 class="h4">ニューフェイス</h2>
                                     <p>新人の女の子や体験入店の女の子を紹介。</p>
                                 </div>
                                 <!-- Post Items Title End -->
-
-                                <!-- Post Items Start -->
-                                <div class="post--items post--items-2">
-                                    <ul class="nav row gutter--15">
-                                        <li class="col-xs-12">
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-1">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/news-single-img/profile1.jpg" alt=""></a>
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">ホシ(25)</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">T.160 B.89 (C) W.59 H.87</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">花</a><br>
-                                                                <a href="#" class="btn-link">[錦糸町・小岩・葛西 / 韓国デリヘル]</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
+                                <div class="col-sm-6 text-center">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <a href="#">
+                                                <img src="img/news-single-img/profile1.jpg" alt="profile">
+                                                <div class="newface-info">
+                                                    <p>ホシ<span>(25)</span></p>
+                                                    <p>花</p>
+                                                    <p>[錦糸町・小岩・葛西 / 韓国デリヘル]</p>
+                                                    <b>8月11日 入店</b>
                                                 </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li class="col-xs-12">
-                                            <!-- Divider Start -->
-                                            <hr class="divider">
-                                            <!-- Divider End -->
-                                        </li>
-                                        <li class="col-xs-6">
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-2">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/news-single-img/profile2.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">ユメ(24)</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">T.160 B.89 (C) W.59 H.87</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">花</a><br>
-                                                                <a href="#" class="btn-link">[錦糸町・小岩・葛西 / 韓国デリヘル]</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="#">
+                                                <img src="img/news-single-img/profile2.jpg" alt="profile">
+                                                <div class="newface-info">
+                                                    <p>ホシ<span>(25)</span></p>
+                                                    <p>花</p>
+                                                    <p>[錦糸町・小岩・葛西 / 韓国デリヘル]</p>
+                                                    <b>8月11日 入店</b>
                                                 </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li class="col-xs-6">
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-2">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/news-single-img/profile3.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">モナ(25)</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">T.161 B.90 (D) W.58 H.89</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">花</a><br>
-                                                                <a href="#" class="btn-link">[錦糸町・小岩・葛西 / 韓国デリヘル]</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                    </ul>
-
-                                    <!-- Preloader Start -->
-                                    <div class="preloader bg--color-0--b" data-preloader="1">
-                                        <div class="preloader--inner"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="#">
+                                                <img src="" alt="">
+                                            </a>
+                                        </div>
                                     </div>
-                                    <!-- Preloader End -->
                                 </div>
-                                <!-- Post Items End -->
+                                <div class="col-sm-6 text-center">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <a href="#">
+                                                <img src="" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="#">
+                                                <img src="" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="#">
+                                                <img src="" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newface-btn">
+                                <button> ニューフェイス 一覧へ<i class="fa fa-chevron-circle-right"></i></button>
                             </div>
                             <!-- ニューフェイス End -->
 
-                            <!-- 東京のデリヘル嬢を探す Start -->
-                            <div class="col-md-6 ptop--30 pbottom--30">
-                                <!-- Post Items Title Start -->
-                                <div class="post--items-title" data-ajax="tab">
-                                    <h2 class="h4">東京のデリヘル嬢を探す</h2>
-                                    <p>123 人中 1 - 50 人表示</p>
-                                </div>
-                                <!-- Post Items Title End -->
-
-                                <!-- Post Items Start -->
-                                <div class="post--items post--items-2">
-                                    <ul class="nav row gutter--15">
-                                        <li class="col-xs-12">
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-1">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/news-single-img/profile4.jpg" alt=""></a>
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">ユイ(24)</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">T.160 B.91 (E) W.59 H.87</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">花</a><br>
-                                                                <a href="#" class="btn-link">[錦糸町・小岩・葛西 / 韓国デリヘル]</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li class="col-xs-12">
-                                            <!-- Divider Start -->
-                                            <hr class="divider">
-                                            <!-- Divider End -->
-                                        </li>
-                                        <li class="col-xs-6">
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-2">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/news-single-img/profile5.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">ジェニス(19)</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">T.170 B.89 (C) W.54 H.84</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">ニューノブレス</a><br>
-                                                                <a href="#" class="btn-link">[鶯谷 / 韓国デリヘル]</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li class="col-xs-6">
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-2">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/news-single-img/profile6.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">エバ(19)</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">T.168 B.95 (G) W.53 H.84</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">ニューノブレス</a><br>
-                                                                <a href="#" class="btn-link">[鶯谷 / 韓国デリヘル]</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                    </ul>
-
-                                    <!-- Preloader Start -->
-                                    <div class="preloader bg--color-0--b" data-preloader="1">
-                                        <div class="preloader--inner"></div>
-                                    </div>
-                                    <!-- Preloader End -->
-                                </div>
-                                <!-- Post Items End -->
-                            </div>
-                            <!-- 東京のデリヘル嬢を探す End -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Main Content End -->
-
-                <!-- Main Sidebar Start -->
-                <div
-                    class="main--sidebar col-md-4 col-sm-5 ptop--30 pbottom--30"
-                    >
-                    <div>
-                        <!-- Widget Start -->
-                        <div class="widget">
-                            <!-- Ad Widget Start -->
-                            <div class="ad--widget">
-                                <div class="ad--area1">
-                                    <div class="autoplay">
-                                        <img src="img/ads-img/slide-banner-1.jpg" alt="banner1">
-                                        <img src="img/ads-img/slide-banner-2.jpg" alt="banner2">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Ad Widget End -->
-                        </div>
-                        <!-- Widget End -->
-
-
-                        <!-- Widget Start -->
-                        <div class="widget">
-                            <div class="widget--title">
-                                <h2 class="h4">Get Newsletter</h2>
-                                <i class="icon fa fa-envelope-open-o"></i>
-                            </div>
-
-                            <!-- Subscribe Widget Start -->
-                            <div class="subscribe--widget">
-                                <div class="content">
-                                    <p>Subscribe to our newsletter to get latest news, popular news and exclusive
-                                        updates.</p>
-                                </div>
-
-                                <form
-                                    action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&id=f4e0e93d1d"
-                                    method="post"
-                                    name="mc-embedded-subscribe-form"
-                                    target="_blank"
-                                    data-form="mailchimpAjax">
-                                    <div class="input-group">
-                                        <input
-                                            type="email"
-                                            name="EMAIL"
-                                            placeholder="E-mail address"
-                                            class="form-control"
-                                            autocomplete="off"
-                                            required="required">
-
-                                        <div class="input-group-btn">
-                                            <button type="submit" class="btn btn-lg btn-default active">
-                                                <i class="fa fa-paper-plane-o"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="status"></div>
-                                </form>
-                            </div>
-                            <!-- Subscribe Widget End -->
-                        </div>
-                        <!-- Widget End -->
-
-                        <!-- Widget Start -->
-                        <div class="widget">
-                            <div class="widget--title">
-                                <h2 class="h4">Featured News</h2>
-                                <i class="icon fa fa-newspaper-o"></i>
-                            </div>
-
-                            <!-- List Widgets Start -->
-                            <div class="list--widget list--widget-1">
-                                <div class="list--widget-nav">
-                                    <ul class="nav nav-justified">
-                                        <li>
-                                            <a href="#" data-ajax-action="load_widget_hot_news">Hot News</a>
-                                        </li>
-                                        <li class="active">
-                                            <a href="#" data-ajax-action="load_widget_trendy_news">Trendy News</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-ajax-action="load_widget_most_watched">Most Watched</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Post Items Start -->
-                                <div class="post--items post--items-3">
-                                    <ul class="nav" data-ajax-content="inner">
-                                        <li>
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-3">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/widgets-img/news-widget01.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">ナイス</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">2020年4月27日 14:05 </a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">素敵なひとときを ご一緒させて下さい♪</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li>
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-3">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/widgets-img/news-widget02.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">ゴディバ</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"> 2020年4月27日 14:05</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">Long established fact that a reader will be distracted</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li>
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-3">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/widgets-img/news-widget03.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">ダイアモンド</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">2020年4月21日 13:54</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">素敵な</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li>
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-3">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/widgets-img/news-widget04.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">ダイアモンド</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">2020年4月21日 13:53</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">ねえ-疲れてるお兄様!</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                    </ul>
-
-                                    <!-- Preloader Start -->
-                                    <div class="preloader bg--color-0--b" data-preloader="1">
-                                        <div class="preloader--inner"></div>
-                                    </div>
-                                    <!-- Preloader End -->
-                                </div>
-                                <!-- Post Items End -->
-                            </div>
-                            <!-- List Widgets End -->
-                        </div>
-                        <!-- Widget End -->
-
-                        <!-- Widget Start -->
-                        <div class="widget">
-                            <div class="widget--title">
-                                <h2 class="h4">Advertisement</h2>
-                                <i class="icon fa fa-bullhorn"></i>
-                            </div>
-
-                            <!-- Ad Widget Start -->
-                            <div class="ad--widget">
-                                <a href="#">
-                                    <img data-src="https://www.delipark.jp/wp-content/themes/dp-portal-group/assets/images/side-qr.jpg" width="240" height="240" class=" lazyloaded" alt="スマホでもデリヘルパーク" src="https://www.delipark.jp/wp-content/themes/dp-portal-group/assets/images/side-qr.jpg" style="">
-                                </a>
-                            </div>
-                            <!-- Ad Widget End -->
-                        </div>
-                        <!-- Widget End -->
-                    </div>
-                </div>
-                <!-- Main Sidebar End -->
-            </div>
-
-            <!-- Main Content Start -->
-            <div class="main--content pd--30-0">
-                <!-- Post Items Title Start -->
-                <div class="post--items-title">
-                    <h2 class="h4">投稿動画</h2>
-                </div>
-                <!-- Post Items Title End -->
-
-                <!-- Post Items Start -->
-                <div class="post--items post--items-4" data-ajax-content="outer">
-                    <ul class="nav row" data-ajax-content="inner">
-                        <li class="col-md-8">
-                            <!-- Post Item Start -->
-                            <div class="post--item post--layout-1 post--type-video post--title-large">
-                                <div class="post--img">
-                                    <a href="#" class="thumb"><img src="img/movie-img/movie1.jpg" alt=""></a>
-
-                                    <div class="post--info">
-                                        <ul class="nav meta">
-                                            <li>
-                                                <a href="#">キララ (19才)</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">T168cm B90(D) W54 H85</a>
-                                            </li>
-                                        </ul>
-
-                                        <div class="title">
-                                            <h2 class="h4">
-                                                <a href="#" class="btn-link">プロフィールを表示
-                                                    やってきました！ 100％の絶対自信あり！</a>
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Post Item End -->
-
-                            <!-- Divider Start -->
-                            <hr class="divider hidden-md hidden-lg">
-                            <!-- Divider End -->
-                        </li>
-
-                        <li class="col-md-4">
-                            <ul class="nav">
-                                <li>
-                                    <!-- Post Item Start -->
-                                    <div class="post--item post--type-audio post--layout-3">
-                                        <div class="post--img">
-                                            <a href="#" class="thumb"><img src="img/movie-img/movie2.jpg" alt=""></a>
-
-                                            <div class="post--info">
-                                                <ul class="nav meta">
-                                                    <li>
-                                                        <a href="#">ジェニス (19)</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">T.170 B.89 (C) W.54 H.84</a>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="title">
-                                                    <h3 class="h4">
-                                                        <a href="#" class="btn-link">プロフィールを表示
-                                                            まさにパーフェクト</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Post Item End -->
-                                </li>
-                                <li>
-                                    <!-- Post Item Start -->
-                                    <div class="post--item post--type-video post--layout-3">
-                                        <div class="post--img">
-                                            <a href="#" class="thumb"><img src="img/movie-img/movie3.jpg" alt=""></a>
-
-                                            <div class="post--info">
-                                                <ul class="nav meta">
-                                                    <li>
-                                                        <a href="#">エバ (19)</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">T.168 B.95 (G) W.53 H.84</a>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="title">
-                                                    <h3 class="h4">
-                                                        <a href="#" class="btn-link">とっても綺麗で可愛い女の子の入店です。</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Post Item End -->
-                                </li>
-                                <li>
-                                    <!-- Post Item Start -->
-                                    <div class="post--item post--type-video post--layout-3">
-                                        <div class="post--img">
-                                            <a href="#" class="thumb"><img src="img/movie-img/movie4.jpg" alt=""></a>
-
-                                            <div class="post--info">
-                                                <ul class="nav meta">
-                                                    <li>
-                                                        <a href="#">クッキー (19)</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">T.161 B.95 (D) W.54 H.83</a>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="title">
-                                                    <h3 class="h4">
-                                                        <a href="#" class="btn-link">清楚なルックスと色白美肌が自慢のクッキーちゃん</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Post Item End -->
-                                </li>
-                                <li>
-                                    <!-- Post Item Start -->
-                                    <div class="post--item post--type-audio post--layout-3">
-                                        <div class="post--img">
-                                            <a href="#" class="thumb"><img src="img/movie-img/movie5.jpg" alt=""></a>
-
-                                            <div class="post--info">
-                                                <ul class="nav meta">
-                                                    <li>
-                                                        <a href="#">セブン (19)</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">T.170 B.93 (E) W.55 H.86</a>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="title">
-                                                    <h3 class="h4">
-                                                        <a href="#" class="btn-link">プロフィールを表示
-                                                            大型新人セブンちゃん入店です☆</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Post Item End -->
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <!-- Preloader Start -->
-                    <div class="preloader bg--color-0--b" data-preloader="1">
-                        <div class="preloader--inner"></div>
-                    </div>
-                    <!-- Preloader End -->
-                </div>
-                <!-- Post Items End -->
-            </div>
-            <!-- Main Content End -->
-
-            <!-- Advertisement Start -->
-            <div class="ad--space pd--30-0">
-                <a href="#">
-                    <img src="img/movie-img/movie-banner.jpg" alt="" class="center-block">
-                </a>
-            </div>
-            <!-- Advertisement End -->
-
-            <div class="row">
-                <!-- Main Content Start -->
-                <div class="main--content col-md-8 col-sm-7">
-                    <div>
-                        <div class="row">
-                            <!-- Foods and Recipes Start -->
-                            <div class="col-md-12 ptop--30 pbottom--30">
+                            <!-- 開催中のイベント Start -->
+                            <div class="col-md-12 ptop--30 pbottom--30 main-event">
                                 <!-- Post Items Title Start -->
                                 <div class="post--items-title">
                                     <h2 class="h4">開催中のイベント</h2>
-                                    <p>掲載店舗からのお得な割引情報をご紹介。</p>
+                                    <p>掲載店舗からのお得な割引情報をご紹介。/p>
                                 </div>
-                                <!-- Post Items Title End -->
-
-                                <!-- Post Items Start -->
-                                <div class="post--items">
-                                    <ul class="nav row gutter--15">
-                                        <li class="col-md-4 col-xs-6 col-xxs-12">
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-1">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/news-single-img/640x640-60x60.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">スタイル スペシャルイベント</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">Style</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">[銀座・新橋・汐留 / スタンダードデリヘル]</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
+                                <div class="event-caption">
+                                    <p>2020年8月20日 (木)開催のイベントは<b>7</b>件</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6 main-event-item">
+                                        <a href="#">
+                                            <div class="event-img">
+                                                <img src="img/event-img/event1.jpg" alt="event1">
+                                            </div>
+                                            <div class="event-cont">
+                                                <div class="event-title">
+                                                    <p>スタイル スペシャルイベント</p>
+                                                </div>
+                                                <div class="event-sub">
+                                                    <p>Style</p>
+                                                    <p>[銀座・新橋・汐留 / スタンダードデリヘル]</p>
+                                                    <p>2020年5月15日 (金) - 2024年5月29日 (水)</p>
                                                 </div>
                                             </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li class="col-xs-12 hidden shown-xxs">
-                                            <!-- Divider Start -->
-                                            <hr class="divider">
-                                            <!-- Divider End -->
-                                        </li>
-                                        <li class="col-md-4 col-xs-6 col-xxs-12">
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-1">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/news-single-img/480x480-60x60-1.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">☆クラスメイト☆</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">クラスメイト 渋谷校</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">[渋谷 / スタンダードデリヘル]</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li class="col-md-4 hidden-sm hidden-xs">
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-1">
-                                                <div class="post--img">
-                                                    <a href="#" class="thumb"><img src="img/news-single-img/480x480-60x60-2.jpg" alt=""></a>
-
-                                                    <div class="post--info">
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <a href="#">年度末決算企画！！ 衝撃の価格破壊！！</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">東京ジョイヘブン</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <div class="title">
-                                                            <h3 class="h4">
-                                                                <a href="#" class="btn-link">[池袋 / スタンダードデリヘル]</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                    </ul>
-
-                                    <!-- Preloader Start -->
-                                    <div class="preloader bg--color-0--b" data-preloader="1">
-                                        <div class="preloader--inner"></div>
+                                        </a>
                                     </div>
-                                    <!-- Preloader End -->
+                                    <div class="col-xs-6 main-event-item">
+                                        <a href="#">
+                                            <div class="event-img">
+                                                <img src="img/event-img/event1.jpg" alt="event1">
+                                            </div>
+                                            <div class="event-cont">
+                                                <div class="event-title">
+                                                    <p>スタイル スペシャルイベント</p>
+                                                </div>
+                                                <div class="event-sub">
+                                                    <p>Style</p>
+                                                    <p>[銀座・新橋・汐留 / スタンダードデリヘル]</p>
+                                                    <p>2020年5月15日 (金) - 2024年5月29日 (水)</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <!-- Post Items End -->
+                                <div class="row">
+                                    <div class="col-xs-6 main-event-item">
+                                        <a href="#">
+                                            <div class="event-img">
+                                                <img src="img/event-img/event1.jpg" alt="event1">
+                                            </div>
+                                            <div class="event-cont">
+                                                <div class="event-title">
+                                                    <p>スタイル スペシャルイベント</p>
+                                                </div>
+                                                <div class="event-sub">
+                                                    <p>Style</p>
+                                                    <p>[銀座・新橋・汐留 / スタンダードデリヘル]</p>
+                                                    <p>2020年5月15日 (金) - 2024年5月29日 (水)</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 main-event-item">
+                                        <a href="#">
+                                            <div class="event-img">
+                                                <img src="img/event-img/event1.jpg" alt="event1">
+                                            </div>
+                                            <div class="event-cont">
+                                                <div class="event-title">
+                                                    <p>スタイル スペシャルイベント</p>
+                                                </div>
+                                                <div class="event-sub">
+                                                    <p>Style</p>
+                                                    <p>[銀座・新橋・汐留 / スタンダードデリヘル]</p>
+                                                    <p>2020年5月15日 (金) - 2024年5月29日 (水)</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6 main-event-item">
+                                        <a href="#">
+                                            <div class="event-img">
+                                                <img src="img/event-img/event1.jpg" alt="event1">
+                                            </div>
+                                            <div class="event-cont">
+                                                <div class="event-title">
+                                                    <p>スタイル スペシャルイベント</p>
+                                                </div>
+                                                <div class="event-sub">
+                                                    <p>Style</p>
+                                                    <p>[銀座・新橋・汐留 / スタンダードデリヘル]</p>
+                                                    <p>2020年5月15日 (金) - 2024年5月29日 (水)</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 main-event-item">
+                                        <a href="#">
+                                            <div class="event-img">
+                                                <img src="img/event-img/event1.jpg" alt="event1">
+                                            </div>
+                                            <div class="event-cont">
+                                                <div class="event-title">
+                                                    <p>スタイル スペシャルイベント</p>
+                                                </div>
+                                                <div class="event-sub">
+                                                    <p>Style</p>
+                                                    <p>[銀座・新橋・汐留 / スタンダードデリヘル]</p>
+                                                    <p>2020年5月15日 (金) - 2024年5月29日 (水)</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Foods and Recipes End -->
-
-                            <!-- Photo Gallery Start -->
+                            <div class="event-btn">
+                                <button>開催中のイベント 一覧へ<i class="fa fa-chevron-circle-right"></i></button>
+                            </div>
+                            <!-- 開催中のイベント End -->
                         </div>
                     </div>
                 </div>
@@ -1953,104 +1414,441 @@
 
                 <!-- Main Sidebar Start -->
                 <div
-                    class="main--sidebar col-md-4 col-sm-5 ptop--30 pbottom--30"
-                    data-sticky-content="true">
-                    <div class="sticky-content-inner">
-                        <!-- Widget Start -->
-                        <div class="widget">
-                            <div class="widget--title">
-                                <h2 class="h4">新規掲載店</h2>
-                                <p>デリヘルパーク新規掲載店！</p>
-                            </div>
-
-                            <!-- List Widgets Start -->
-                            <div class="list--widget list--widget-2">
-                                <!-- Post Items Start -->
-                                <div class="post--items post--items-3">
-                                    <ul class="nav">
-                                        <li>
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-3">
-                                                <div class="post--img">
-                                                    <span class="thumb"><img src="img/banner-img/circle-banner.png" alt=""></span>
-                                                    <div class="post--info">
-                                                        <div class="title">
-                                                            <h3 class="h4">SPA POLINI～ポリーニ～(メンズエステ)</h3>
-                                                        </div>
-
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <span>[鶯谷 / 店舗型エステ]</span></li>
-                                                            <li>
-                                                                <span>7月28日UP!</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li>
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-3">
-                                                <div class="post--img">
-                                                    <span class="thumb"><img src="img/banner-img/circle-banner.png" alt=""></span>
-
-                                                    <div class="post--info">
-                                                        <div class="title">
-                                                            <h3 class="h4">ラベンダー(リラクゼーション)</h3>
-                                                        </div>
-
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <span>[鶯谷 / 店舗型エステ]</span></li>
-                                                            <li>
-                                                                <span>7月28日UP!</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                        <li>
-                                            <!-- Post Item Start -->
-                                            <div class="post--item post--layout-3">
-                                                <div class="post--img">
-                                                    <span class="thumb"><img src="img/banner-img/circle-banner.png" alt=""></span>
-
-                                                    <div class="post--info">
-                                                        <div class="title">
-                                                            <h3 class="h4">灯り屋(エステ)</h3>
-                                                        </div>
-
-                                                        <ul class="nav meta">
-                                                            <li>
-                                                                <span>[鶯谷 / 店舗型エステ]</span></li>
-                                                            <li>
-                                                                <span>7月28日UP!</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Post Item End -->
-                                        </li>
-                                    </ul>
-
-                                    <!-- Preloader Start -->
-                                    <div class="preloader bg--color-0--b">
-                                        <div class="preloader--inner"></div>
+                    class="main--sidebar col-md-4 col-sm-5 pbottom--30"
+                    >
+                    <div>
+                        <div class="widget side--widget">
+                            <div class="sidemenu">
+                                <div class="sidemenu-1">
+                                    <div class="side-menu-title">
+                                        <p>閲覧履歴</p>
                                     </div>
-                                    <!-- Preloader End -->
+                                    <div class="side-menu-sub">
+                                        <p>店舗閲覧履歴</p>
+                                    </div>
                                 </div>
-                                <!-- Post Items End -->
+                                <ul>
+                                    <ll>
+                                        <a href="#">
+                                            <div class="side-contents">
+                                                <img src="img/widgets-img/left-widget-1.jpg" alt="side-widget">
+                                                <div class="side-title">
+                                                    <p>オールヌード</p>
+                                                    <p>[鶯谷 / アジアンデリヘル]</p>
+                                                </div>
+                                                <div class="side-sub">
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </ll>
+                                    <ll>
+                                        <a href="#">
+                                            <div class="side-contents">
+                                                <img src="img/widgets-img/left-widget-2.jpg" alt="side-widget">
+                                                <div class="side-title">
+                                                    <p>オールヌード</p>
+                                                    <p>[鶯谷 / アジアンデリヘル]</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </ll>
+                                    <ll>
+                                        <a href="#">
+                                            <div class="side-contents">
+                                                <img src="img/widgets-img/left-widget-3.jpg" alt="side-widget">
+                                                <div class="side-title">
+                                                    <p>オールヌード</p>
+                                                    <p>[鶯谷 / アジアンデリヘル]</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </ll>
+                                    <ll>
+                                        <a href="#">
+                                            <div class="side-contents">
+                                                <img src="img/widgets-img/left-widget-4.jpg" alt="side-widget">
+                                                <div class="side-title">
+                                                    <p>オールヌード</p>
+                                                    <p>[鶯谷 / アジアンデリヘル]</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </ll>
+                                    <ll>
+                                        <a href="#">
+                                            <div class="side-contents">
+                                                <img src="img/widgets-img/left-widget-5.jpg" alt="side-widget">
+                                                <div class="side-title">
+                                                    <p>オールヌード</p>
+                                                    <p>[鶯谷 / アジアンデリヘル]</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </ll>
+                                </ul>
+                                <div class="side-button1">
+                                    <button>店舗閲覧履歴 一覧へ<i class="fa fa-chevron-circle-right"></i>
+                                </div>
+                                <div class="sidemenu-2">
+                                    <div class="side-menu-title">
+                                        <p>キャスト閲覧履歴</p>
+                                    </div>
+                                    <div class="side-menu-sub text-center">
+                                        <p>見つかりませんでした。</p>
+                                    </div>
+                                </div>
+                                <div class="side-button1">
+                                    <button>キャスト閲覧履歴 一覧へ<i class="fa fa-chevron-circle-right"></i>
+                                </div>
                             </div>
-                            <!-- List Widgets End -->
                         </div>
+                        <!-- Widget Start -->
+                        <div class="widget right--widget">
+                            <!-- Ad Widget Start -->
+                            <div class="first-widget">
+                                <div class="widget-title">
+                                    <p>写メ日記</p>
+                                </div>
+                                <div class="widget-sub">
+                                    <p>女の子のプライベートやエロ画像をチェック！</p>
+                                </div>
+                            </div>
+                            <div class="widget-images">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget01.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget02.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget03.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget04.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget05.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget06.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget07.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget08.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget09.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget10.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget11.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <a href="#">
+                                            <img src="img/widgets-img/news-widget12.jpg" alt="widget">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-button">
+                                <button>写メ日記 一覧へ<i class="fa fa-chevron-circle-right"></i></button>
+                            </div>
+                            <!-- Ad Widget End -->
+                        </div>
+                        <!-- Widget End -->
+
+
+                        <!-- Widget Start -->
+                        <div class="widget second--widget">
+                            <div class="second-widget">
+                                <div class="second-widget-title">
+                                    <p>投稿動画</p>
+                                </div>
+                                <div class="second-widget-sub">
+                                    <p>女の子からのマル秘投稿動画をチェック！</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <a href="#">
+                                        <div class="widget-videos">
+                                            <img src="img/widgets-img/widget-video1.jpg" alt="video">
+                                        </div>
+                                        <div class="widget-video-cont">
+                                            <div class="video-title">
+                                                <p>清楚系美少女のその名もゴディバちゃん入店です.</p>
+                                                <p>2020年8月18日 12:15</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="#">
+                                        <div class="widget-videos">
+                                            <img src="img/widgets-img/widget-video2.jpg" alt="video">
+                                        </div>
+                                        <div class="widget-video-cont">
+                                            <div class="video-title">
+                                                <p>清楚系美少女のその名もゴディバちゃん入店です.</p>
+                                                <p>2020年8月18日 12:15</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <a href="#">
+                                        <div class="widget-videos">
+                                            <img src="img/widgets-img/widget-video1.jpg" alt="video">
+                                        </div>
+                                        <div class="widget-video-cont">
+                                            <div class="video-title">
+                                                <p>清楚系美少女のその名もゴディバちゃん入店です.</p>
+                                                <p>2020年8月18日 12:15</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="#">
+                                        <div class="widget-videos">
+                                            <img src="img/widgets-img/widget-video2.jpg" alt="video">
+                                        </div>
+                                        <div class="widget-video-cont">
+                                            <div class="video-title">
+                                                <p>清楚系美少女のその名もゴディバちゃん入店です.</p>
+                                                <p>2020年8月18日 12:15</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <a href="#">
+                                        <div class="widget-videos">
+                                            <img src="img/widgets-img/widget-video1.jpg" alt="video">
+                                        </div>
+                                        <div class="widget-video-cont">
+                                            <div class="video-title">
+                                                <p>清楚系美少女のその名もゴディバちゃん入店です.</p>
+                                                <p>2020年8月18日 12:15</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="#">
+                                        <div class="widget-videos">
+                                            <img src="img/widgets-img/widget-video2.jpg" alt="video">
+                                        </div>
+                                        <div class="widget-video-cont">
+                                            <div class="video-title">
+                                                <p>清楚系美少女のその名もゴディバちゃん入店です.</p>
+                                                <p>2020年8月18日 12:15</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="video-button">
+                                <button>投稿動画 一覧へ<i class="fa fa-chevron-circle-right"></i></button>
+                            </div>
+                        </div>
+                        <!-- Widget End -->
+
+                        <!-- Widget Start -->
+                        <div class="widget user--widget">
+                            <div class="main-user">
+                                <div class="main-user-title">
+                                    <p>クチコミ</p>
+                                </div>
+                            
+                                <div class="main-user-sub">
+                                    <p>女の子からのマル秘投稿動画をチェック！</p>
+                                </div>
+                            </div>
+                            <div class="main-user-info">
+                                <a href="#">
+                                    <div class="main-user-info-item">
+                                        <div class="user-info-item-1">
+                                            <img src="img/widgets-img/user_noimage.png" alt="noimage">
+                                            <p>thanks</p>
+                                        </div>
+                                        <div class="user-info-item-2">
+                                            <p>tozai234</p>
+                                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                        </div>
+                                        <div class="user-info-item-3">
+                                            <p>オールヌード</p>
+                                            <p>[鶯谷 / アジアンデリヘル]</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="main-user-button">
+                                <button>投稿動画 一覧へ<i class="fa fa-chevron-circle-right"></i></button>
+                            </div>
+                            
+                        </div>
+                        <!-- Widget End -->
+
+                        <!-- Widget Start -->
+                        <div class="widget newopen--widget">
+                            <div class="main-newopen">
+                                <div class="main-newopen-title">
+                                    <p>新規掲載店</p>
+                                </div>
+                            
+                                <div class="main-newopen-sub">
+                                    <p>デリヘルパーク新規掲載店！</p>
+                                </div>
+                            </div>
+                            <div class="main-newopen-info">
+                                <a href="#">
+                                    <div class="main-newopen-item">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/widgets-img/Noimage-80x80.png" alt="none">
+                                                    <div class="main-shop-section">
+                                                        <div class="main-shop-day">
+                                                            <p>7月28日UP!</p>
+                                                        </div>
+                                                        <div class="main-shop-name">
+                                                            <p>SPA POLINI～ポリーニ～(メンズエステ)</p>
+                                                        </div>
+                                                        <div class="main-shop-area">
+                                                            <p>[鶯谷 / 店舗型エステ]</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/widgets-img/Noimage-80x80.png" alt="none">
+                                                    <div class="main-shop-section">
+                                                        <div class="main-shop-day">
+                                                            <p>7月28日UP!</p>
+                                                        </div>
+                                                        <div class="main-shop-name">
+                                                            <p>SPA POLINI～ポリーニ～(メンズエステ)</p>
+                                                        </div>
+                                                        <div class="main-shop-area">
+                                                            <p>[鶯谷 / 店舗型エステ]</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/widgets-img/Noimage-80x80.png" alt="none">
+                                                    <div class="main-shop-section">
+                                                        <div class="main-shop-day">
+                                                            <p>7月28日UP!</p>
+                                                        </div>
+                                                        <div class="main-shop-name">
+                                                            <p>SPA POLINI～ポリーニ～(メンズエステ)</p>
+                                                        </div>
+                                                        <div class="main-shop-area">
+                                                            <p>[鶯谷 / 店舗型エステ]</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/widgets-img/Noimage-80x80.png" alt="none">
+                                                    <div class="main-shop-section">
+                                                        <div class="main-shop-day">
+                                                            <p>7月28日UP!</p>
+                                                        </div>
+                                                        <div class="main-shop-name">
+                                                            <p>SPA POLINI～ポリーニ～(メンズエステ)</p>
+                                                        </div>
+                                                        <div class="main-shop-area">
+                                                            <p>[鶯谷 / 店舗型エステ]</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/widgets-img/Noimage-80x80.png" alt="none">
+                                                    <div class="main-shop-section">
+                                                        <div class="main-shop-day">
+                                                            <p>7月28日UP!</p>
+                                                        </div>
+                                                        <div class="main-shop-name">
+                                                            <p>SPA POLINI～ポリーニ～(メンズエステ)</p>
+                                                        </div>
+                                                        <div class="main-shop-area">
+                                                            <p>[鶯谷 / 店舗型エステ]</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="main-shop-button">
+                                <button> 新規掲載店 一覧へ<i class="fa fa-chevron-circle-right"></i></button>
+                            </div>
+                            <div class="main-shop-banner text-center">
+                                <a href="#">
+                                    <img src="img/widgets-img/320x80-1.jpg" alt="shop-banner">
+                                </a>
+                                <a href="#">
+                                    <img src="img/widgets-img/320x80-58.jpg" alt="shop-banner">
+                                </a>
+                                <a href="#">
+                                    <img src="img/widgets-img/joyheaven320x80.jpg" alt="shop-banner">
+                                </a>
+                                <a href="#">
+                                    <img src="img/widgets-img/side-qr.jpg" alt="qr">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Widget End -->
                     </div>
                 </div>
                 <!-- Main Sidebar End -->
             </div>
         </div>
-    </div>
     <div class="container sidebar-area">
         <div class="row">
             <div class="col-sm-2">
@@ -2873,13 +2671,14 @@
 <!-- Back To Top Button End -->
 
 
+
 <!-- ==== jQuery Library ==== -->
 <script src="js/jquery-3.2.1.min.js"></script>
 
 <!-- ==== slick js ==== -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
 
 <!-- ==== Bootstrap Framework ==== -->
 <script src="js/bootstrap.min.js"></script>

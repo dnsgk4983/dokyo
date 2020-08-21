@@ -580,4 +580,7 @@ footer{
     #footer-copy-right{
         padding: 0 !important;
     }
+    .main-map2 a{
+        font-size: 13px;
+    }
 }

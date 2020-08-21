@@ -156,12 +156,11 @@ WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SA
     .header--navbar .navbar-collapse:before {
         content: "\f00d";
         position: absolute;
-        top: 0;
-        right: -40px;
+        top: 5px;
+        right: 5px;
         width: 40px;
         color: #fff;
-        background-color: #da0000;
-        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+        background-color: transparent;
         font-family: "FontAwesome";
         font-size: 16px;
         line-height: 40px;
