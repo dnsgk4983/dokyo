@@ -773,15 +773,15 @@ Author URI  : https://themeforest.net/user/themelooks
             $bodyPreloader.fadeOut('slow');
         }
     });
-    $(document).ready(function(){
-        $('.nav-rank').mouseover(function(){
-            (this).children('ul').slideDown();
-        });
-    });
 
 })(jQuery);
 
+$(document).ready(function(){
+    $('.autoplay').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    });
+});    
 
-
-
-    

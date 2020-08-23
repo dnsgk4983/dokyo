@@ -144,7 +144,7 @@ WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SA
         height: auto !important;
         margin: 0;
         color: #777;
-        background-color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
         border-width: 0;
         box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
         overflow: visible !important;
@@ -156,8 +156,8 @@ WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SA
     .header--navbar .navbar-collapse:before {
         content: "\f00d";
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 0;
+        right: 0;
         width: 40px;
         color: #fff;
         background-color: transparent;
