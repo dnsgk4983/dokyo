@@ -156,6 +156,9 @@
 .photo-box1,.photo-box2,.photo-box3{
     margin: 10px 0;
 }
+.photo-box-bor{
+    padding: 0 5px;
+}
 .photo-box-bor img{
     transition: all 0.3s;
 }
@@ -358,7 +361,7 @@
     text-align: left;
 }
 .small-model .cast-size p:not(:first-child){
-    color: #888;
+    color: #000;
 }
 .small-model img{
     width: 20%;
@@ -368,14 +371,14 @@
     padding: 5px 30px;
 }
 .model-info{
-    color: #888;
+    color: #000;
 }
 .info-link{
     padding: 0 30px;
     text-align: right;
 }
 .info-link a{
-    color: #888;
+    color: #000;
 }
 @media (max-width:568px){
     .small-model{
@@ -476,11 +479,11 @@
 }
 .shop-list-item h3{
     font-size: 2rem;
-    margin-top: .5rem;
+    margin: 1.5rem 0;
     color: #000;
 }
 .shop-list-item p{
-    color: #888;
+    color: #000;
 }
 .shop-list-item span{
     margin-left: 10px;
@@ -526,6 +529,8 @@
 }
 .shop-main-status i{
     color: #b91d73;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 .shop-chat{
     text-align: center;
@@ -623,13 +628,13 @@
     color: #fff;
 }
 .featured-content{
+    padding: 15px 0;
     display: flex;
     flex-direction: column;
 }
 .featured-content-item{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 }
 .featured-content-item del span{
     font-size: 16px;
@@ -640,7 +645,7 @@
     margin-top: 5px;
 }
 .featured-content-item p{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #ff0000;
 }
@@ -649,22 +654,22 @@
     display: flex;
 }
 .shop-pickup .col-sm-12:nth-child(2){
-    margin-left: -30px;
+    margin-left: 5px;
 }
 .shop-pickup ul{
     padding: 0;
-    margin-top: 30px;
+    /* margin-top: 15px; */
     display: flex;
 }
 .shop-pickup ul>li{
-    margin: 0 .3rem;
+    margin: 0 .5rem;
 }
 .shop-pickup ul>li img{
     position: relative;
 }
 .shop-pickup ul>li .cast-section{
     position: absolute;
-    width: 78px;
+    width: 75px;
     text-align: center;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
@@ -738,6 +743,15 @@
 }
 .value-list-title{
     display: flex;
+}
+
+.value-num{
+    margin-top: 10px;
+}
+.value-num p{
+    font-size: 24px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
 }
 .value-title-item{
     margin-left: 5px;
@@ -1645,6 +1659,15 @@
     text-align: center;
 }
 
+.shop-footer{
+    display: none;
+}
+.shop-copyright .text{
+    padding: 15px 0 0;
+}
+.shop-copyright .social{
+    padding: 15px 0;
+}
 @media(max-width:1200px){
     #shop-info-area{
         flex-direction: column;

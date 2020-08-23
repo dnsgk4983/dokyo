@@ -773,15 +773,18 @@ Author URI  : https://themeforest.net/user/themelooks
             $bodyPreloader.fadeOut('slow');
         }
     });
+    $('.nav-rank').mouseover(function(){
+        $('#nav-select').stop().slideDown();
+    });
+    $('.nav-rank').mouseleave(function(){
+        $('#nav-select').slideUp(500);
+    });
+    $('.nav-rank').hover(function(){
+        $('.nav-rank a').css('color','#d352ac');
+    });
+    $(".nav-rank").mouseleave(function(){
+        $('.nav-rank a').css("color","#fff")
+    });
 
 })(jQuery);
-
-$(document).ready(function(){
-    $('.autoplay').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    });
-});    
 

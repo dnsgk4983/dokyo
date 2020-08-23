@@ -16,11 +16,20 @@ header{
     background-color: #fff;
 }
 .inner-banner{
-    width: 90%;
-    float: right;
+    margin-top: 15px;
+    width: 100%;
+    transition: .3s;
+}
+.inner-banner:hover{
+    opacity: .7;
 }
 
 .navbar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar-li{
     display: flex;
     align-items: center;
 }
@@ -50,7 +59,7 @@ span.icon {font-family : xeicon;}
 
 @media (min-width: 768px){
     .join-btn a{
-        padding: 5px 10px !important;
+        padding: 5px 15px !important;
     }
 }
 
