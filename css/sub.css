@@ -230,6 +230,7 @@
 @media (max-width:767px) {
     .box-set {
         display: block;
+        margin-bottom: 100px;
     }
 
     .box1, .box2, .box3 {
