@@ -8623,28 +8623,28 @@ footer .nav li a{
 }
 
 /* main-navi */
-.main-navigation{
-    width: 100%;
+
+.header--sub>.row>div{
+    padding: 10px 0;
+    display: flex;
     border-bottom: 1px solid #ccc;
+}
+.header--sub a{
+    color: #000;
+    transition: all .3s;
+}
+.header--sub a:hover{
+    color: #da0000;
+}
+.header--sub>.row>div>p>i{
+    margin: 0 15px;
 }
 .navbar-header{
     position: relative;
     z-index: 0;
 
 }
-.main-navi>div{
-    display: flex;
-    padding: 10px 0 0;
-}
-.main-navi a{
-    color: #333;
-}
-.main-navi p{
-    margin: 0 10px 10px;
-}
-.main-navi i{
-    margin-top: 5px;
-}
+
 /* main-sub-nav */
 .main-sub-nav{
     position: absolute;
