@@ -8980,3 +8980,45 @@ footer .nav li a{
         width: 80%;
     }
 }
+
+/* select-frame */
+.select-frame{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px !important;
+}
+.select-wrap{
+    width: 50%;
+    display: flex;
+}
+.select-wrap select{
+    width: calc(50%);
+}
+.cross{
+    margin: .8rem .8rem;
+}
+.select-wrap input{
+    width: calc(50%);
+}
+.button-orange{
+    height: 40px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 15px;
+}
+.button-orange i{
+    margin-right: 5px;
+    color: #fff;
+}
+.search-label p{
+    color: #fff;
+}
+@media(max-width: 992px){
+    .select-wrap{
+        width: 75%;
+    }
+}
