@@ -15,6 +15,17 @@ header{
     border-bottom: 5px solid #e91e63;
     background-color: #fff;
 }
+.header-title{
+    background: linear-gradient(45deg, #f15f79 50%,#d352ac 100%);
+    text-align: center;
+    display: none;
+}
+.header-title p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+}
 .inner-banner{
     margin-top: 15px;
     width: 100%;
@@ -42,7 +53,7 @@ header{
 }
 .logo-img{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 .join-btn a{
     padding: .3rem 1.6rem;
@@ -69,8 +80,7 @@ span.icon {font-family : xeicon;}
     }
     .logo-img{
         width: 50% !important;
-        margin: 0;
-        padding: 10px 0;
+        margin: 0 0 10px 0;
     }
     .navbar-toggle{
         background: #f15f79;
@@ -87,6 +97,9 @@ span.icon {font-family : xeicon;}
     }
     header{
         padding: 1px 0;
+    }
+    .header-title{
+        display: block;
     }
     .logo-img{
         margin-left: 15px;
@@ -115,6 +128,9 @@ span.icon {font-family : xeicon;}
     }
     .map-box{
         display:none;
+    }
+    .logo{
+        margin-left: 33%;
     }
 
 }
@@ -571,9 +587,65 @@ footer{
     border: none;
 }
 
+.mobile-map{
+    
+    height: 60px;
+    margin: 45px auto 15px;
+    padding-top: 10px;
+    display: none !important;
+    background: url(../images/enter-map-area.png);
+    background-repeat: no-repeat;
+}
+.mobile-list-count{
+    margin: 0 auto;
+    justify-content: center;
+    width: 420px !important;
+
+}
+@media(max-width:1200px){
+    .main-map{
+        background-size: 100%;
+        background-position: 0px -20px;
+    }
+    #pref-area-map-7{
+        right: 144px;
+    }
+    #pref-area-map-90{
+        left: 580px;
+    }
+    #pref-area-map-92{
+        left: 440px;
+    }
+    #pref-area-map-103{
+        left: 463px;
+    }
+    #pref-area-map-181{
+        left: 278px;
+    }
+    #pref-area-map-133{
+        left: 130px;
+    }
+    #pref-area-map-184{
+        left: 291px;
+    }
+    #pref-area-map-237{
+        right: 150px;
+    }
+}
 @media(max-width:1024px){
     .main-map{
         display: none
+    }
+}
+@media(max-width:767px){
+    .mobile-map{
+        width: 70%;
+        display: block !important;
+    }
+}
+@media(max-width:634px){
+    .mobile-map{
+        width: 76%;
     }
 }
 @media(max-width:568px){
@@ -586,10 +658,18 @@ footer{
     footer #footer-navigation{
         display: none;
     }
+    #shop-list-count{
+        display: flex !important;
+        justify-content: center;
+    }
     #footer-copy-right{
         padding: 0 !important;
     }
     .main-map2 a{
         font-size: 13px;
     }
+    .mobile-map{
+        width: 90%;
+    }
+    
 }

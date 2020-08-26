@@ -3564,7 +3564,18 @@ div#flickr_badge_wrapper {
     height: 90px;
     vertical-align: middle;
 }
+.header--logo p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -20px;
+}
 
+.header--logo img{
+    max-width: 110%;
+    width: 110%;
+}
 .header--style-2 .header--logo a,
 .header--style-8 .header--logo a {
     height: auto;
@@ -7471,6 +7482,9 @@ body.isScrolling #backToTop {
 .user-bg{
     background-color:#ffffff !important;
 }
+.user-bg > .container {
+    padding: 0 15px 0 0;
+}
 .login-nav-txt a{
     color:#333 !important;
 }
@@ -8624,9 +8638,8 @@ footer .nav li a{
 
 /* main-navi */
 
-.header--sub>.row>div{
+.header--sub{
     padding: 10px 0;
-    display: flex;
     border-bottom: 1px solid #ccc;
 }
 .header--sub a{
@@ -8636,7 +8649,10 @@ footer .nav li a{
 .header--sub a:hover{
     color: #da0000;
 }
-.header--sub>.row>div>p>i{
+.header--sub span{
+    cursor: inherit;
+}
+.header--sub i{
     margin: 0 15px;
 }
 .navbar-header{
@@ -8651,10 +8667,10 @@ footer .nav li a{
     background: #fff;
     border: 1px solid #d352ac;
     border-top: none;
-    width: 170px;
+    width: 280px;
     top: 60px;
     left: 0;
-    padding: 0 10px;
+    padding: 10px;
     z-index: 99999;
     display: none;
 }
@@ -8969,7 +8985,7 @@ footer .nav li a{
     font-size: 16px;
     color: #000;
 }
-@media(max-width:768px){
+@media(max-width:767px){
     #rank{
         width: 80%;
     }
@@ -8979,6 +8995,10 @@ footer .nav li a{
     #rank3{
         width: 80%;
     }
+    .main-sub-nav{
+        display: none !important;
+    }
+    
 }
 
 /* select-frame */
