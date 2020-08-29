@@ -454,6 +454,10 @@
 .shop-tabs ul>li:last-child{
     border-right: 1px solid #999;
 }
+.shop-tabs ul > li > a{
+    font-size: 12px;
+    letter-spacing: -1px;
+}
 .shop-tabs ul>li.select{
     background: #e91e63;
     border: none;

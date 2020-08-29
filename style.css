@@ -9229,5 +9229,11 @@ footer .nav li a{
     .event-btn button{
         padding: 5px 66px;
     }
+    .logo{
+        margin-left: 29% !important;
+    }
+    .main{
+        padding: 0 !important;
+    }
     
 }
