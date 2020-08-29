@@ -8635,16 +8635,7 @@ footer .nav li a{
 .main-navi-target>li:nth-child(11) span{
     background: #26a69a;
 }
-@media (max-width: 767px){
-    ul.header--menu-links.nav > li.active > a{
-        color: #d352ac;
-    }
-}
-@media(max-width:568px){
-    .news-frame{
-        border-left: 1px solid #ccc;
-    }
-}
+
 
 /* main-navi */
 
@@ -9193,5 +9184,16 @@ footer .nav li a{
     }
     #header-area-navigation>.row>ul>li{
         width: 10%;
+    }
+    ul.header--menu-links.nav > li.active > a{
+        color: #d352ac;
+    }
+}
+@media(max-width:568px){
+    .news-frame{
+        border-left: 1px solid #ccc;
+    }
+    .pref-search-word-list li{
+        padding: 0 2px;
     }
 }

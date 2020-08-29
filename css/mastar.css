@@ -599,7 +599,7 @@ footer{
 .mobile-list-count{
     margin: 0 auto;
     justify-content: center;
-    width: 420px !important;
+    width: 420px;
 
 }
 @media(max-width:1200px){
@@ -670,6 +670,9 @@ footer{
     }
     .mobile-map{
         width: 90%;
+    }
+    .mobile-list-count{
+        width: 100%;
     }
     
 }
