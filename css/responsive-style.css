@@ -367,7 +367,7 @@ WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SA
     /* HEADER SECTION */
     .header--navbar .navbar-header {
         float: left;
-        margin-left: 0;
+        margin-left: 15px;
     }
 
     .header--style-4 .navbar-header,
