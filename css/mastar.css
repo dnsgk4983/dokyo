@@ -661,6 +661,7 @@ footer{
     #shop-list-count{
         display: flex !important;
         justify-content: center;
+        width: 100%;
     }
     #footer-copy-right{
         padding: 0 !important;
@@ -672,7 +673,9 @@ footer{
         width: 90%;
     }
     .mobile-list-count{
-        width: 100%;
+        width: 100% !important;
     }
-    
+    .pref-search-word-list li{
+        padding: 0 2px;
+    }
 }

@@ -8174,7 +8174,6 @@ footer .nav li a{
     font-size: 12px;
 }
 .newface-btn{
-    margin-top: 15px;
     text-align: center;
 }
 .newface-btn button{
@@ -9182,18 +9181,31 @@ footer .nav li a{
     .main-sub-nav{
         display: none !important;
     }
-    #header-area-navigation>.row>ul>li{
-        width: 10%;
-    }
     ul.header--menu-links.nav > li.active > a{
         color: #d352ac;
+    }
+    #header-area-navigation{
+        display: none;
+    }
+    #shop-list-count{
+        display: none;
+    }
+    .select-frame{
+        display: none;
+    }
+    .main-event{
+        padding-bottom: 0 !important;
+    }
+    .main-new-face{
+        padding-bottom: 0 !important;
+    }
+    .widget-images{
+        margin-bottom: 30px !important;
     }
 }
 @media(max-width:568px){
     .news-frame{
         border-left: 1px solid #ccc;
     }
-    .pref-search-word-list li{
-        padding: 0 2px;
-    }
+    
 }
