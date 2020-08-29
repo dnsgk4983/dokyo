@@ -8644,6 +8644,9 @@ footer .nav li a{
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
 }
+.header--sub > .row > div {
+    display: flex;
+}
 .header--sub > .row > div p{
     margin-left: 10px !important;
 }
@@ -9149,6 +9152,9 @@ footer .nav li a{
 .phone-rank-tab{
     display: none;
 }
+.col-md-12{
+    padding: 0 !important;
+}
 @media (max-width: 767px){
     .phone-rank{
         display: block;
@@ -9208,9 +9214,6 @@ footer .nav li a{
     }
     .main-rank-list li:last-child{
         border-bottom: 1px solid #ccc !important;
-    }
-    .widget-button button{
-        width: 50%;
     }
 }
 @media(max-width:568px){
