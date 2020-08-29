@@ -663,11 +663,14 @@ footer{
         justify-content: center;
         width: 100%;
     }
+    .count-list .label{
+        font-size: 13px;
+    }
     #footer-copy-right{
         padding: 0 !important;
     }
     .main-map2 a{
-        font-size: 13px;
+        font-size: 12px;
     }
     .mobile-map{
         width: 90%;
@@ -677,5 +680,14 @@ footer{
     }
     .pref-search-word-list li{
         padding: 0 2px;
+    }
+    .news-button button{
+        padding: 5px 90px;
+    }
+    .newface-btn button{
+        padding: 5px 73px;
+    }
+    .event-btn button{
+        padding: 5px 66px;
     }
 }
