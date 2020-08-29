@@ -7765,7 +7765,6 @@ li{
 }
 .tab-content ul{
     padding: 0;
-    border: 1px solid #ccc;
     border-top: none;
     box-sizing: border-box;
 }
@@ -8802,7 +8801,7 @@ footer .nav li a{
         width: 483px;
     }
     .nav-tabs.ad-tab > li > a {
-        font-size: 1.1rem !important;
+        font-size: 0.9rem !important;
     }
 }
 @media(max-width:992px){
@@ -9153,7 +9152,8 @@ footer .nav li a{
     display: none;
 }
 .col-md-12{
-    padding: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 @media (max-width: 767px){
     .phone-rank{
