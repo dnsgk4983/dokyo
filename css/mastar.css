@@ -681,13 +681,5 @@ footer{
     .pref-search-word-list li{
         padding: 0 2px;
     }
-    .news-button button{
-        padding: 5px 90px;
-    }
-    .newface-btn button{
-        padding: 5px 73px;
-    }
-    .event-btn button{
-        padding: 5px 66px;
-    }
+    
 }

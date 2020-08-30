@@ -8883,9 +8883,30 @@ footer .nav li a{
         font-size: 0.9rem !important;
     }
 }
+@media (min-width: 993px){
+    .nav-register{
+        display: none;
+    }
+    .nav-search-area{
+        display: none;
+    }
+}
 @media(max-width:992px){
-    #headerNav .nav{
-        padding-top: 50px;
+    .nav-register{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 45px;
+        margin-bottom: 15px;
+    }
+    .nav-register button{
+        padding: 5px 1rem;
+        border-radius: 5px;
+        background: #fff;
+        border: none;
+        color: #000;
+    }
+    .nav-register i{
+        color: #e9731a;
     }
     .nav>li>a{
         display: flex;
@@ -9118,6 +9139,7 @@ footer .nav li a{
 .search-label p{
     color: #fff;
 }
+
 @media(max-width: 992px){
     .select-wrap{
         width: 75%;
@@ -9274,8 +9296,20 @@ footer .nav li a{
     .main-sub-nav{
         display: none !important;
     }
+    ul.header--menu-links.nav > li:hover {
+        background:rgba(108, 108, 108, 0.8) !important;
+    }
+    ul.header--menu-links.nav > li:hover > a{
+        color: #ffffff !important;
+    }
+    ul.header--menu-links.nav > li.active {
+        background: rgba(108, 108, 108, 0.8);
+    }
+
+    ul.header--menu-links.nav > li:active a,
+    ul.header--menu-links.nav > li:focus a,
     ul.header--menu-links.nav > li.active > a{
-        color: #d352ac;
+        color: #ffffff;
     }
     #header-area-navigation{
         display: none;
@@ -9319,4 +9353,23 @@ footer .nav li a{
         padding: 0 !important;
     }
     
+}
+/* 0830 메인수정 */
+.nav-search-title{
+    background: rgba(108, 108, 108, 0.8);
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+.nav-search-area{
+    text-align: center;
+}
+.nav-search-area select{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: #000;
 }
