@@ -127,9 +127,9 @@
 
 }
 
-.post-num{
+/* .post-num{
     margin-top: 30px;
-}
+} */
 
 .post-num ul{
     display: flex;
@@ -226,29 +226,7 @@
     font-size: 14px;
 }
 
-@media (max-width:767px) {
-    .box-set {
-        display: block;
-        margin-bottom: 100px;
-    }
 
-    .box1, .box2, .box3 {
-        width: 100%;
-        height: 50px;
-        background-color: #fff;
-        border: 1px solid #eee;
-        margin: 10px 0;
-    }
-
-    .box1-head {
-        display: flex;
-        justify-content: center;
-    }
-
-    .photo-box-bor {
-        width: 180px;
-    }
-}
 
 
 
@@ -295,14 +273,6 @@
     font-weight: 500;
 }
 
-
-
-@media (max-width:767px) {
-    .sch-boxall {
-        display: block;
-    }
-}
-
 .cast-section {
     cursor: pointer;
 }
@@ -328,7 +298,7 @@
 }
 /* bj create css */
 .box-set .box1 .box1-head>div{
-    padding: 0 30px;
+    padding: 0 10px;
 }
 .box1-content{
     line-height: 22px;
@@ -406,7 +376,7 @@
 /* shop area */
 .shop-selecter{
     border: 1px solid #000;
-    padding: 10px 5px;
+    padding: 10px 10px;
     border-radius: 5px;
 }
 .shop-selecter-title{
@@ -446,7 +416,9 @@
 .shop-tabs ul>li{
     width: 25%;
     height: 40px;
-    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border: 1px solid #999;
     border-right: none;
@@ -455,8 +427,7 @@
     border-right: 1px solid #999;
 }
 .shop-tabs ul > li > a{
-    font-size: 12px;
-    letter-spacing: -1px;
+    font-size: 16px;
 }
 .shop-tabs ul>li.select{
     background: #e91e63;
@@ -467,11 +438,12 @@
 }
 
 .shop-list{
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
 }
 .shop-list .col-sm-12{
     padding: 0;
 }
+
 .shop-list-item{
     display: flex;
     justify-content: space-between;
@@ -490,14 +462,25 @@
     color: #000;
 }
 .shop-list-item span{
-    margin-left: 10px;
     background: #ff9800;
     color: #fff;
-    padding: 2px 5px;
+    padding: 1px 5px;
+    font-size: 12px;
+}
+.shop-list-sub-wrap{
+    display: flex;
+    align-items: center;
+}
+.shop-list-sub-wrap span{
+    margin-left: 15px;
 }
 .list-btn i{
     font-size: 1.6rem;
     margin-right: .5rem;
+}
+.shop-list-item .list-btn{
+    display: flex;
+    align-items: center;
 }
 .list-btn>button{
     margin-top: 1.2rem;
@@ -528,6 +511,7 @@
 }
 .shop-main-status{
     display: flex;
+    justify-content: center;
     margin-top: 10px;
     margin-left: 8px;
 }
@@ -693,9 +677,6 @@
     .shop-info-left{
         margin: 0 auto;
         text-align: center;
-    }
-    .shop-main-status{
-        margin-left: 11rem;
     }
     .shop-info-left img{
         width: 80%;
@@ -1697,8 +1678,58 @@
         width: 25%;
     }
 } */
+
+@media (max-width:767px) {
+    .box-set {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .box1, .box2, .box3 {
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #eee;
+        margin: 10px 0;
+    }
+
+    .box1-head {
+        display: flex;
+        justify-content: center;
+    }
+
+    .photo-box-bor {
+        width: 180px;
+    }
+    .sch-boxall {
+        display: block;
+    }
+    .shop-tabs ul{
+        padding: 0 1rem;
+    }
+    .shop-tabs ul > li > a{
+        font-size: 10px;
+        letter-spacing: -1px;
+    }
+    .shop-list-item span{
+        margin-left: 0;
+    }
+    .shop-price-featured{
+        margin-left: 0 !important;
+    }
+}
+
+
+
 @media(max-width:690px){
     .baloon{
         left: 10px;
+    }
+}
+
+@media(max-width: 568px){
+    .shop-list-sub-wrap{
+        flex-direction: column;
+        align-items: baseline;
     }
 }
