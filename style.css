@@ -7808,9 +7808,7 @@ li{
     flex-direction: column;
     margin-left: 10px;
 }
-.shop-info{
-    font-size: 1.1rem;
-}
+
 .tab-content .title{
     transition: .2s;
     font-weight: 800;
@@ -7832,6 +7830,30 @@ li{
 .nav-tabs li:nth-child(2){
     background: #0a8d58;
     color: #fff;
+}
+
+.girl-sum{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 222px;
+}
+.shop-list{
+    border-left: 1px solid #999 !important;
+    border-right: 1px solid #999 !important;
+    border-bottom: 1px solid #999 !important;
+}
+
+@media(max-width: 560px){
+    .girl-sum{
+        display: flex;
+        height: 150px;
+        flex-wrap: wrap;
+    }
+    .girl-th{
+        display: none;
+    }
+
 }
 
 .nav-tabs li:nth-child(3){
