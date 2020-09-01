@@ -448,6 +448,7 @@
 .shop-list-item{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: linear-gradient(to bottom,#fefefe,#f1f1f1);
     padding: 1rem 2rem;
     border-bottom: 1px solid #999;
@@ -456,7 +457,7 @@
 }
 .shop-list-item h3{
     font-size: 2rem;
-    margin: 1.5rem 0;
+    margin: 12px 0 4px;
     color: #000;
 }
 .shop-list-item p{
@@ -478,6 +479,9 @@
 .shop-list-sub-wrap{
     display: flex;
     align-items: center;
+}
+.shop-list-sub-wrap p{
+    margin: 0;
 }
 .shop-list-sub-wrap span{
     margin-left: 15px;
@@ -741,6 +745,9 @@
     margin: 30px 0;
     text-align: center;
     color: #3c5e9c;
+}
+.value-title i{
+    margin-right: .4rem;
 }
 .value-title-caption{
     text-align: right;
@@ -1673,6 +1680,102 @@
 .shop-copyright .social{
     padding: 15px 0;
 }
+
+/* 0901 */
+.shop-list > .col-sm-4{
+    margin-top: 3%;
+}
+.user-flex > .col-sm-4 i{
+    color: #b91d73;
+    margin-top: .5rem;
+}
+.user-flex > .col-sm-4 {
+    margin-top: 3%;
+}
+.user-flex > .col-sm-4 p{
+    font-size: 13px;
+}
+.shop-list > .col-sm-8 > .row > .flex-center > .shop-info{
+    flex-direction: column;
+}
+.flex-center > .shop-info > .info-time{
+    margin-bottom: 3%;
+}
+.cast-section{
+    text-align: center;
+}
+.user-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shop-list-title{
+    display: flex;
+}
+.shop-list-title img{
+    margin-right: 12px;
+}
+.shop-list-title-num{
+    width: 5rem;
+    height: 3.6rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-right: 12px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+}
+.shop-list-title-num p{
+    font-size: 2.8rem;
+}
+/* cast-rank */
+.cast-rank-wrap{
+    padding: 0;
+}
+.cast-rank-wrap .col-sm-4{
+    padding: 0;
+}
+.cast-rank-title i{
+    color: #9a165f;
+}
+.cast-rank-title span{
+    color: #9a165f;
+}
+.cast-rank-item a{
+    color: #000;
+}
+.rank-info-wrap{
+    text-align: center;
+    line-height: 12px;
+    padding: 8px 0;
+    border-bottom: 1px dotted #000;
+}
+.rank-info-wrap p{
+    transition: .3s;
+}
+.rank-info-wrap p:last-child{
+    font-size: 11px;
+}
+.cast-rank-item a:hover .rank-info-wrap p:first-child{
+    color: #da0000;
+}
+.cast-rank-item a:hover > img:nth-child(2){
+    opacity: .7;
+}
+.rank-info-shop{
+    line-height: 12px;
+}
+.rank-info-shop p{
+    font-size: 11px;
+}
+.rank-info-wrap .cast-size{
+    border: none;
+}
+.rank-info-shop{
+    text-align: center;
+}
+
+
 @media(max-width:1200px){
     #shop-info-area{
         flex-direction: column;
@@ -1690,7 +1793,7 @@
         font-size: 12px;
     }
     .shop-price-featured{
-        margin-left: 9rem;
+        margin-left: 4rem;
     }
     .shop-pickup{
         justify-content: center;
@@ -1723,8 +1826,8 @@
         margin-top: 5px;
     }
     .shop-price-featured{
-
-        margin-left: 7.6rem;
+        width: 105%;
+        margin-left: 0;
     }
     .shop-pickup ul > li > a .cast-section{
         width: 59px;
@@ -1732,6 +1835,12 @@
     }
     .shop-pickup > .col-sm-12:last-child > ul > li > a .cast-section{
         width: 59px;
+    }
+    .shop-list > .col-sm-4{
+        margin-top: 8%;
+    }
+    .shop-list .user-flex p{
+        font-size: 10px;
     }
 }
 
@@ -1761,7 +1870,7 @@
         display: block;
     }
     .shop-tabs ul > li > a{
-        font-size: 10px;
+        font-size: 12px;
         letter-spacing: -1px;
     }
     .shop-list-sub-wrap{
@@ -1794,6 +1903,33 @@
     .shop-main-status i{
         font-size: 16px;
     }
+    .user-flex{
+        margin-bottom: 3% !important;
+    }
+    .shop-list .user-flex p{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .shop-list .user-flex i{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .shop-list .user-flex span{
+        font-size: 14px;
+    }
+    .shop-list > .col-sm-8 > .row > .flex-center > .shop-info {
+        flex-direction: inherit;
+    }
+    .flex-center > .shop-info > .info-time{
+        margin: 0;
+    }
+    .info.info-tell{
+        margin: 0;
+        margin-left: 2rem;
+    }
+    .shop-price-featured {
+        width: 100%;
+    }
 }
 
 
@@ -1810,11 +1946,7 @@
         align-items: baseline;
     }
 
-    .user-flex{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    
     .shop-lead{
         text-align: center;
         margin-top: 10px;
@@ -1829,4 +1961,5 @@
 .news-content-count{
     margin: 15px 0 !important;
 }
+
 
