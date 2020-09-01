@@ -57,6 +57,7 @@
 
 .group-area label{
     margin: 10px 10px;
+    font-weight: 400;
 }
 .group-area h3{
     margin: 0;
@@ -1039,7 +1040,7 @@
 }
 @media (max-width:568px){
     .event-img img{
-        margin-top: 100px;
+        margin-top: 50%;
     }
 }
 
@@ -1774,7 +1775,58 @@
 .rank-info-shop{
     text-align: center;
 }
+.shop-pickup .col-sm-12{
+    display: flex;
+}
+.news-content-count{
+    margin: 15px 0 !important;
+}
+.cast-rank .col-sm-2{
+    padding: 0;
+}
+.cast-rank .col-sm-12{
+    padding: 0;
+}
+/* diary-rank */
+.diary-rank-title i{
+    color: #6a1b9a;
+}
+.diary-rank-title span{
+    color: #6a1b9a;
+}
+.cast-rank > .col-sm-2{
+    cursor: pointer;
+}
+.cast-rank > .col-sm-2 img{
+    transition: all .3s;
+}
+.cast-rank > .col-sm-2 .col-sm-12:nth-child(3) p{
+    transition: all .3s;
+}
+.cast-rank > .col-sm-2:hover .col-sm-12:nth-child(3) p:first-child{
+    color: #da0000;
 
+}
+.cast-rank > .col-sm-2:hover img{
+    opacity: .7;
+}
+.cast-rank > .col-sm-2 > .row > .col-sm-12:nth-child(3) P:first-child{
+    font-weight: 700;
+}
+.cast-rank > .col-sm-2 > .row > .col-sm-12:nth-child(3){
+    padding: 15px 0;
+}
+.cast-rank > .col-sm-2 > .row > .col-sm-12:nth-child(4) p {
+    font-size: 12px;
+}
+.cast-rank .cast-size{
+    border: none;
+}
+.cast-rank > .col-sm-2 > .row > .col-sm-12:nth-child(3),
+.cast-rank > .col-sm-2 > .row > .col-sm-12:nth-child(4){
+    line-height: 12px;
+    text-align: center;
+}
 
 @media(max-width:1200px){
     #shop-info-area{
@@ -1806,6 +1858,9 @@
     }
     .shop-pickup .col-sm-12:first-child ul li:last-child{
         display: none;
+    }
+    .cast-rank .col-sm-12{
+        padding: 0 1rem;
     }
 }
 @media(max-width:992px){
@@ -1930,6 +1985,11 @@
     .shop-price-featured {
         width: 100%;
     }
+    .cast-rank .col-sm-2:nth-child(3),
+    .cast-rank .col-sm-2:nth-child(4){
+        display: none;
+    }
+    
 }
 
 
@@ -1954,12 +2014,8 @@
     .shop-check-icon{
         text-align: center;
     }
+    .cast-rank .col-sm-2:nth-child(5),
+    .cast-rank .col-sm-2:nth-child(6){
+        display: none;
+    }
 }
-.shop-pickup .col-sm-12{
-    display: flex;
-}
-.news-content-count{
-    margin: 15px 0 !important;
-}
-
-
