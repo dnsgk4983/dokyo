@@ -7849,6 +7849,7 @@ li{
         display: flex;
         height: 150px;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     .girl-th{
         display: none;
@@ -8351,7 +8352,7 @@ footer .nav li a{
 }
 .first-widget{
     display: flex;
-    padding: 10px 0;
+    padding: 15px 0;
     margin-bottom: 15px;
     border-bottom: 1px solid #ccc
 }
@@ -8431,7 +8432,7 @@ footer .nav li a{
 }
 .second-widget{
     display: flex;
-    padding: 10px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #ccc;
     margin-bottom: 15px;
 }
@@ -8523,7 +8524,7 @@ footer .nav li a{
     content: '';
 }
 .main-user{
-    padding: 10px 0;
+    padding: 15px 0;
     margin-bottom: 15px;
     border-bottom: 1px solid #ccc;
     display: flex;

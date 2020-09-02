@@ -472,6 +472,7 @@
 }
 .shop-list-title a{
     transition: all .3s;
+    font-size: 14px;
     color: #000;
 }
 .shop-list-title a:hover{
@@ -483,6 +484,7 @@
 }
 .shop-list-sub-wrap p{
     margin: 0;
+    font-size: 12px;
 }
 .shop-list-sub-wrap span{
     margin-left: 15px;
@@ -730,7 +732,10 @@
         margin-top: 2rem;
     }
     .shop-info .info{
-        padding: 0 30px;
+        padding: 0 15px;
+    }
+    .shop-list .col-sm-8{
+        padding: 0;
     }
 }
 
@@ -1078,7 +1083,7 @@
 .baloon{
     width: 290px;
     position: relative;
-    left: 70px;
+    left: 30px;
     border: 1px solid #ccc;
     padding: 5px 15px;
     border-radius: 5px;
@@ -1127,6 +1132,9 @@
 }
 
 /* hana-tab */
+.hana-banner{
+    margin-top: 30px;
+}
 .hana-tab{
     margin: 0;
 }
@@ -1946,7 +1954,7 @@
     }
     .shop-tabs ul > li > a{
         font-size: 12px;
-        letter-spacing: -1px;
+        letter-spacing: -3px;
     }
     .shop-list-sub-wrap{
         flex-direction: column;
@@ -2038,6 +2046,21 @@
         flex-direction: column;
         align-items: baseline;
     }
+    .baloon{
+        width: 192px;
+    }
+    .portal-page-title{
+        font-size: 24px;
+    }
+    .group-type h3{
+        font-size: 24px;
+    }
+    .shop-favorite{
+        flex-direction: column;
+    }
+    .shop-favorite li{
+        margin: 15px 0;
+    }
 
     
     .shop-lead{
@@ -2052,7 +2075,7 @@
         display: none;
     }
     .hana-tab li a{
-        letter-spacing: -2px;
+        letter-spacing: -5px;
     }
     .hana-header-info .shop-area{
         font-size: 10px;
@@ -2068,5 +2091,8 @@
     .hana-archive p{
         font-size: 12px;
         letter-spacing: -1px;
+    }
+    .hana-widget{
+        padding: 0 !important;
     }
 }

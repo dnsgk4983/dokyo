@@ -157,10 +157,10 @@ WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SA
         content: "\f00d";
         position: absolute;
         top: 0;
-        right:  5px;
+        right:  -40px;
         width: 40px;
         color: #fff;
-        background-color: transparent;
+        background-color: #e91e63;
         font-family: "FontAwesome";
         font-size: 16px;
         line-height: 40px;
