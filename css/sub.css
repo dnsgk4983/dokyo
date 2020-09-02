@@ -1151,6 +1151,8 @@
 }
 
 .hana-conts{
+    position: relative;
+    z-index: 1;
     margin-top: 15px;
 }
 .hana-conts{
@@ -1342,7 +1344,10 @@
 }
 /* hana-widget-1 */
 .hana-widget{
-    padding: 0 15px;
+    padding: 0 0 0 15px;
+    position: relative;
+    float: left;
+    z-index: 9;
 }
 .hana-widget-1{
     margin-top: 15px;
@@ -1862,6 +1867,12 @@
     .cast-rank .col-sm-12{
         padding: 0 1rem;
     }
+    .baloon{
+        left: 30px;
+    }
+    .hana-archive p{
+        font-size: 16px;
+    }
 }
 @media(max-width:992px){
 
@@ -1896,6 +1907,15 @@
     }
     .shop-list .user-flex p{
         font-size: 10px;
+    }
+    .hana-widget-1 p:nth-child(3){
+        font-size: 13px;
+    }
+    .hana-widget-info-title p{
+        font-size: 16px;
+    }
+    .hana-widget-info-sub{
+        font-size: 12px;
     }
 }
 
@@ -1989,7 +2009,20 @@
     .cast-rank .col-sm-2:nth-child(4){
         display: none;
     }
-    
+    .hana-tab li a{
+        font-size: 10px;
+        letter-spacing: -1px;
+    }
+    .shop-favorite li span{
+        font-size: 12px;
+        letter-spacing: -1px;
+    }
+    .baloon{
+        left: 0;
+    }
+    #shop-info-caption{
+        font-size: 16px;
+    }
 }
 
 
@@ -2017,5 +2050,23 @@
     .cast-rank .col-sm-2:nth-child(5),
     .cast-rank .col-sm-2:nth-child(6){
         display: none;
+    }
+    .hana-tab li a{
+        letter-spacing: -2px;
+    }
+    .hana-header-info .shop-area{
+        font-size: 10px;
+        letter-spacing: -2px;
+    }
+    #shop-info-caption{
+        font-size: 12px;
+        letter-spacing: -1px;
+    }
+    .hana-order-label p{
+        font-size: 12px;
+    }
+    .hana-archive p{
+        font-size: 12px;
+        letter-spacing: -1px;
     }
 }

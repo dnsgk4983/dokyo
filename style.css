@@ -8334,6 +8334,7 @@ footer .nav li a{
 
 /* first widget */
 .right--widget{
+    margin-top: 15px !important;
     position: relative;
 }
 .widget-title-1::after{
@@ -8506,7 +8507,7 @@ footer .nav li a{
 
 /* main-user-widget */
 .user--widget{
-    margin-top: 30px !important;
+    margin-top: 15px !important;
     position: relative;
 }
 .main-user::after{
@@ -8602,7 +8603,7 @@ footer .nav li a{
 }
  /* main-shop--widget */
 .newopen--widget{
-    margin-top: 30px !important;
+    margin-top: 15px !important;
     position: relative;
 }
  .main-newopen::after{
