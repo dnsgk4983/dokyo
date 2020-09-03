@@ -1140,18 +1140,25 @@
 }
 .hana-tab  li{
     width: 11.11%;
-    background: #606060 !important;
+    background: #2E2E2E !important;
     border-left: 1px solid #fff;
+    transition: .3s;
 }
-.hana-tab li a{
+.hana-tab li:hover{
+    background: #606060 !important;
+}
+.hana-tab li > a{
     font-size: 13px;
     transition: .3s;
 }
 .hana-tab li:first-child a{
     color: #fff !important;
 }
-.hana-tab>li.active>a, .hana-tab>li.active>a:focus, .hana-tab>li.active>a:hover{
+.hana-tab>li.active>a{
     font-weight: 400 !important;
+    color: #ffff00 !important;
+}
+.hana-tab > li:hover > a{
     color: #ffff00 !important;
 }
 .hana-tab li a{
@@ -2031,6 +2038,7 @@
     #shop-info-caption{
         font-size: 16px;
     }
+
 }
 
 
@@ -2096,3 +2104,79 @@
         padding: 0 !important;
     }
 }
+
+.hana-conts .user-flex{
+    align-items: baseline;
+}
+.hana-dl-tabs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    position: relative;
+}
+.hana-dl-tabs::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    left: 0;
+    right: 0;
+    bottom: 9px;
+}
+.hana-dl-tabs > ul {
+    display: flex;
+    padding-left: 1rem;
+}
+.hana-dl-tabs > ul > li{
+    height: 41px;
+    border: none;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-right: none;
+}
+.hana-dl-tabs > ul > li:last-child{
+    border-right: 1px solid #ccc;
+}
+.hana-dl-tabs button{
+    height: 31px;
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #d352ac 50%, #f15f79 100%);;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .gallery-top {
+    height: 80%;
+    width: 100%;
+  }
+
+  .gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
