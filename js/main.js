@@ -791,7 +791,8 @@ Author URI  : https://themeforest.net/user/themelooks
         slidesPerView: 4,
         freeMode: true,
         watchSlidesVisibility: true,
-        watchSlidesProgress: true
+        watchSlidesProgress: true,
+        
       });
       var galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 10,
@@ -802,6 +803,7 @@ Author URI  : https://themeforest.net/user/themelooks
         thumbs: {
           swiper: galleryThumbs
         },
+        autoplay: true
         // autoplay: {
         //     delay: 2500,
         //     disableOnInteraction: false,
