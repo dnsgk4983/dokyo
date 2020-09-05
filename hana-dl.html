@@ -369,308 +369,355 @@
                         </div>
                     </div>
                 </div>
-                <!-- hana tab -->
-                <div class="hana-tab">
-                    <ul class="nav nav-tabs hana-tab">
-                        <li class="active"><a data-toggle="tab" href="#home">ホーム</a></li>
-                        <li><a data-toggle="tab" href="#menu1">お店速報</a></li>
-                        <li><a data-toggle="tab" href="#menu2">料金システム</a></li>
-                        <li><a data-toggle="tab" href="#menu3">キャスト</a></li>
-                        <li><a data-toggle="tab" href="#menu4">出勤予定</a></li>
-                        <li><a data-toggle="tab" href="#menu5">イベント</a></li>
-                        <li><a data-toggle="tab" href="#menu6">投稿動画</a></li>
-                        <li><a data-toggle="tab" href="#menu7">写メ日記</a></li>
-                        <li><a data-toggle="tab" href="#menu8">クチコミ</a></li>
-                    </ul>
-                </div>
                 <div class="col-sm-9 hana-conts">
                     <div class="row">
                         <div class="tab-content">
                             <div class="tab-1-title">
-                                <p>プロフィール</p>
+                                <p id="hana-dl-title">プロフィール</p>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 hana-dl-wrapper">
                                 <div class="hana-dl-tabs">
-                                    <ul>
-                                        <li>
-                                            <a data-toggle="tabs" href="#dl-tabs1">プロフィール</a>
-                                        </li>
-                                        <li>
-                                            <a data-toggle="tabs" href="#dl-tabs2">写メ日記</a>
-                                        </li>
-                                        <li>
-                                            <a data-toggle="tabs" href="#dl-tabs3">投稿動画</a>
-                                        </li>
-                                    </ul>
+                                    <ul class="nav nav-tabs hana-dl-tab">
+                                        <li class="active"><a data-toggle="tab" href="#home">プロフィール</a></li>
+                                        <li><a data-toggle="tab" href="#menu1">写メ日記</a></li>
+                                        <li><a data-toggle="tab" href="#menu2">投稿動画</a></li>
+                                      </ul>
                                     <button type="button"><i class="fa fa-heart"></i>お気に入りキャストに追加</button>
                                 </div>
-                                <div class="row user-flex">
-                                    <div class="col-sm-4 hana-dl-left">
-                                        <div class="row">
-                                            <div class="col-sm-12 hana-dl-profile">
-                                                <div class="swiper-container gallery-top">
-                                                    <div class="swiper-wrapper">
-                                                      <div class="swiper-slide">
-                                                          <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
-                                                      </div>
-                                                      <div class="swiper-slide">
-                                                          <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
-                                                      </div>
-                                                      <div class="swiper-slide">
-                                                          <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
-                                                      </div>
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade in active">
+                                        <div class="row user-flex">
+                                            <div class="col-sm-4 hana-dl-left">
+                                                <div class="row">
+                                                    <div class="col-sm-12 hana-dl-profile">
+                                                        <div class="swiper-container gallery-top">
+                                                            <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
+                                                            </div>
+                                                            </div>
+                                                            <!-- Add Arrows -->
+                                                            <div class="swiper-button-next swiper-button-white"></div>
+                                                            <div class="swiper-button-prev swiper-button-white"></div>
+                                                        </div>
+                                                        <div class="swiper-container gallery-thumbs">
+                                                            <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
+                                                            </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!-- Add Arrows -->
-                                                    <div class="swiper-button-next swiper-button-white"></div>
-                                                    <div class="swiper-button-prev swiper-button-white"></div>
-                                                  </div>
-                                                  <div class="swiper-container gallery-thumbs">
-                                                    <div class="swiper-wrapper">
-                                                      <div class="swiper-slide">
-                                                        <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
-                                                      </div>
-                                                      <div class="swiper-slide">
-                                                        <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
-                                                      </div>
-                                                      <div class="swiper-slide">
-                                                        <img src="img/hana-img/hana-dl-profile.jpg" alt="profile">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                            </div>
-                                            <div class="col-sm-12 text-center">
-                                                <div class="hana-dl-btn">
-                                                    <button type="button">違反画像を通報</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="tab-1-title">
-                                                    <p>可能オプション</p>
-                                                </div>
-                                                <ul class=" hana-dl-option">
-                                                    <li>コスプレ</li>
-                                                    <li>ノーパン・ノーブラ</li>
-                                                    <li>大人のおもちゃ</li>
-                                                    <li>手枷・手錠・緊縛</li>
-                                                    <li>オナニー鑑賞</li>
-                                                    <li>即尺</li>
-                                                    <li>イマラチオ</li>
-                                                    <li>顔射・ぶっかけ</li>
-                                                    <li>ごっくん</li>
-                                                    <li>聖水</li>
-                                                    <li>AF</li>
-                                                    <li>ローション</li>
-                                                    <li>マットプレイ</li>
-                                                    <li>夜這い</li>
-                                                    <li>3P</li>
-                                                    <li>写真撮影</li>
-                                                    <li>動画撮影</li>
-                                                    <li>出勤リクエスト</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="tab-1-title">
-                                                    <p>可能プレイ</p>
-                                                </div>
-                                                <ul class="hana-dl-play">
-                                                    <li>全身リップ</li>
-                                                    <li>Dキス</li>
-                                                    <li>生フェラ</li>
-                                                    <li>玉なめ</li>
-                                                    <li>指入れ</li>
-                                                    <li>69</li>
-                                                    <li>素股</li>
-                                                    <li>バック素股</li>
-                                                    <li>パイズリ</li>
-                                                    <li>ゴムフェラ</li>
-                                                    <li>アナル舐め</li>
-                                                    <li>即尺</li>
-                                                    <li>口内発射</li>
-                                                    <li>ゴックン</li>
-                                                    <li>オナニー</li>
-                                                    <li>前立腺M</li>
-                                                    <li>AF</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-8 hana-dl-info">
-                                        <div class="row">
-                                            <div class="col-sm-12 hana-dl-name">
-                                                <p>ユイ <span>(24)</span></p>
-                                                <p>T.160 B.91 (E) W.59 H.87</p>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="row hana-dl-time user-flex">
-                                                    <div class="col-sm-8">
-                                                        <p>本日出勤12:00 - 05:00</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <p>これから出勤</p>
+                                                    <div class="col-sm-12 text-center">
+                                                        <div class="hana-dl-btn">
+                                                            <button type="button">違反画像を通報</button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <ul class="hana-dl-type">
-                                                    <li>新人</li>
-                                                    <li>店長オススメ</li>
-                                                    <li>セクシー</li>
-                                                    <li>グラマー</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="row hana-dl-icon-wrap">
+                                                <div class="row">
                                                     <div class="col-sm-12">
-                                                        <div class="row user-flex">
-                                                            <div class="col-sm-3 text-center">
-                                                                <p>この子をシェア</p>
+                                                        <div class="tab-1-title">
+                                                            <p>可能オプション</p>
+                                                        </div>
+                                                        <ul class=" hana-dl-option">
+                                                            <li>コスプレ</li>
+                                                            <li>ノーパン・ノーブラ</li>
+                                                            <li>大人のおもちゃ</li>
+                                                            <li>手枷・手錠・緊縛</li>
+                                                            <li>オナニー鑑賞</li>
+                                                            <li>即尺</li>
+                                                            <li>イマラチオ</li>
+                                                            <li>顔射・ぶっかけ</li>
+                                                            <li>ごっくん</li>
+                                                            <li>聖水</li>
+                                                            <li>AF</li>
+                                                            <li>ローション</li>
+                                                            <li>マットプレイ</li>
+                                                            <li>夜這い</li>
+                                                            <li>3P</li>
+                                                            <li>写真撮影</li>
+                                                            <li>動画撮影</li>
+                                                            <li>出勤リクエスト</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="tab-1-title">
+                                                            <p>可能プレイ</p>
+                                                        </div>
+                                                        <ul class="hana-dl-play">
+                                                            <li>全身リップ</li>
+                                                            <li>Dキス</li>
+                                                            <li>生フェラ</li>
+                                                            <li>玉なめ</li>
+                                                            <li>指入れ</li>
+                                                            <li>69</li>
+                                                            <li>素股</li>
+                                                            <li>バック素股</li>
+                                                            <li>パイズリ</li>
+                                                            <li>ゴムフェラ</li>
+                                                            <li>アナル舐め</li>
+                                                            <li>即尺</li>
+                                                            <li>口内発射</li>
+                                                            <li>ゴックン</li>
+                                                            <li>オナニー</li>
+                                                            <li>前立腺M</li>
+                                                            <li>AF</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8 hana-dl-info">
+                                                <div class="row">
+                                                    <div class="col-sm-12 hana-dl-name">
+                                                        <p>ユイ <span>(24)</span></p>
+                                                        <p>T.160 B.91 (E) W.59 H.87</p>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="row hana-dl-time user-flex">
+                                                            <div class="col-sm-8">
+                                                                <p>本日出勤12:00 - 05:00</p>
                                                             </div>
-                                                            <div class="col-sm-9">
-                                                                <ul class="hana-dl-icons">
-                                                                    <li>
-                                                                        <i class="fab fa-twitter"></i>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="fab fa-facebook-f"></i>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="fab fa-line"></i>
-                                                                    </li>
-                                                                </ul>
+                                                            <div class="col-sm-4">
+                                                                <p>これから出勤</p>
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <ul class="hana-dl-type">
+                                                            <li>新人</li>
+                                                            <li>店長オススメ</li>
+                                                            <li>セクシー</li>
+                                                            <li>グラマー</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="row hana-dl-icon-wrap">
+                                                            <div class="col-sm-12">
+                                                                <div class="row user-flex">
+                                                                    <div class="col-sm-3 text-center">
+                                                                        <p>この子をシェア</p>
+                                                                    </div>
+                                                                    <div class="col-sm-9">
+                                                                        <ul class="hana-dl-icons">
+                                                                            <li>
+                                                                                <i class="fab fa-twitter"></i>
+                                                                            </li>
+                                                                            <li>
+                                                                                <i class="fab fa-facebook-f"></i>
+                                                                            </li>
+                                                                            <li>
+                                                                                <i class="fab fa-line"></i>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 hana-dl-debut">
+                                                        <div class="row">
+                                                            <div class="col-sm-4 text-center">
+                                                                <p>入店日</p>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <p>2020年7月8日</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 hana-dl-work">
+                                                        <div class="tab-1-title">
+                                                            <p>出勤スケジュール</p>
+                                                        </div>
+                                                        <table width="100%" border="1">
+                                                            <colgroup>
+                                                                <col width="20%">
+                                                                <col width="80%">
+                                                            </colgroup>
+                                                            <tr>
+                                                                <td>9/3(木)</td>
+                                                                <td>12:00 - 05:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9/4(金)</td>
+                                                                <td>12:00 - 05:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9/5(土)</td>
+                                                                <td>12:00 - 05:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9/6(日)</td>
+                                                                <td>12:00 - 05:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9/7(月)</td>
+                                                                <td>12:00 - 05:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9/8(火)</td>
+                                                                <td>12:00 - 05:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9/9(木)</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="tab-1-title">
+                                                            <p>店長コメント</p>
+                                                        </div>
+                                                        <div class="hana-manager-review">
+                                                            <p>本当にうっとりするほど超綺麗!可愛い!セクシー!な顔です♪ その美貌と美巨乳は魅力的過ぎですよ♪ 美しい肢体に柔らかく実った天然天然美巨乳バストが、堪らなく男心を欲情させる・本物の美巨乳という武器がもうひとつの魅力です。 スーパーエロフェイスエロボディ！ 究極のバランスのBODY!! 美しい美貌!!　ムンムンの色気！ とにかくきれいなルックス＆バランスの良いバディーにメロメロですよ。</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-12 hana-dl-debut">
-                                                <div class="row">
-                                                    <div class="col-sm-4 text-center">
-                                                        <p>入店日</p>
+                                        </div>
+                                        <div class="col-sm-12 hana-dl-casting">
+                                            <div class="tab-1-title">
+                                                <p>関連キャスト</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="row user-flex">
+                                                        <div class="col-sm-12 hana-dl-casting-item">
+                                                            <img src="img/hana-img/profile1.jpg" alt="profile">
+                                                            <p>ユメ(24)</p>
+                                                            <p>T.157 B.90 (D) W.59 H.88</p>
+                                                        </div>
+                                                        <div class="col-sm-12 hana-dl-casting-item">
+                                                            <img src="img/hana-img/profile1.jpg" alt="profile">
+                                                            <p>ユメ(24)</p>
+                                                            <p>T.157 B.90 (D) W.59 H.88</p>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-sm-8">
-                                                        <p>2020年7月8日</p>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="row user-flex">
+                                                        <div class="col-sm-12 hana-dl-casting-item">
+                                                            <img src="img/hana-img/profile1.jpg" alt="profile">
+                                                            <p>ユメ(24)</p>
+                                                            <p>T.157 B.90 (D) W.59 H.88</p>
+                                                        </div>
+                                                        <div class="col-sm-12 hana-dl-casting-item">
+                                                            <img src="img/hana-img/profile1.jpg" alt="profile">
+                                                            <p>ユメ(24)</p>
+                                                            <p>T.157 B.90 (D) W.59 H.88</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="row user-flex">
+                                                        <div class="col-sm-12 hana-dl-casting-item">
+                                                            <img src="img/hana-img/profile1.jpg" alt="profile">
+                                                            <p>ユメ(24)</p>
+                                                            <p>T.157 B.90 (D) W.59 H.88</p>
+                                                        </div>
+                                                        <div class="col-sm-12 hana-dl-casting-item">
+                                                            <img src="img/hana-img/profile1.jpg" alt="profile">
+                                                            <p>ユメ(24)</p>
+                                                            <p>T.157 B.90 (D) W.59 H.88</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-12 hana-dl-work">
-                                                <div class="tab-1-title">
-                                                    <p>出勤スケジュール</p>
-                                                </div>
-                                                <table width="100%" border="1">
-                                                    <colgroup>
-                                                        <col width="20%">
-                                                        <col width="80%">
-                                                    </colgroup>
-                                                    <tr>
-                                                        <td>9/3(木)</td>
-                                                        <td>12:00 - 05:00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>9/4(金)</td>
-                                                        <td>12:00 - 05:00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>9/5(土)</td>
-                                                        <td>12:00 - 05:00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>9/6(日)</td>
-                                                        <td>12:00 - 05:00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>9/7(月)</td>
-                                                        <td>12:00 - 05:00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>9/8(火)</td>
-                                                        <td>12:00 - 05:00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>9/9(木)</td>
-                                                        <td></td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="tab-1-title">
-                                                    <p>店長コメント</p>
-                                                </div>
-                                                <div class="hana-manager-review">
-                                                    <p>本当にうっとりするほど超綺麗!可愛い!セクシー!な顔です♪ その美貌と美巨乳は魅力的過ぎですよ♪ 美しい肢体に柔らかく実った天然天然美巨乳バストが、堪らなく男心を欲情させる・本物の美巨乳という武器がもうひとつの魅力です。 スーパーエロフェイスエロボディ！ 究極のバランスのBODY!! 美しい美貌!!　ムンムンの色気！ とにかくきれいなルックス＆バランスの良いバディーにメロメロですよ。</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 hana-dl-buttons">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <button type="button">
+                                                                <i class="fa fa-angle-left"></i>
+                                                                前へ
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <button type="button" onclick="location.href='hana.html'">一覧に戻る</button>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <button type="button">次へ
+                                                                <i class="fa fa-angle-right"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 hana-dl-casting">
-                                <div class="tab-1-title">
-                                    <p>関連キャスト</p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="row user-flex">
-                                            <div class="col-sm-12 hana-dl-casting-item">
-                                                <img src="img/hana-img/profile1.jpg" alt="profile">
-                                                <p>ユメ(24)</p>
-                                                <p>T.157 B.90 (D) W.59 H.88</p>
-                                            </div>
-                                            <div class="col-sm-12 hana-dl-casting-item">
-                                                <img src="img/hana-img/profile1.jpg" alt="profile">
-                                                <p>ユメ(24)</p>
-                                                <p>T.157 B.90 (D) W.59 H.88</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="row user-flex">
-                                            <div class="col-sm-12 hana-dl-casting-item">
-                                                <img src="img/hana-img/profile1.jpg" alt="profile">
-                                                <p>ユメ(24)</p>
-                                                <p>T.157 B.90 (D) W.59 H.88</p>
-                                            </div>
-                                            <div class="col-sm-12 hana-dl-casting-item">
-                                                <img src="img/hana-img/profile1.jpg" alt="profile">
-                                                <p>ユメ(24)</p>
-                                                <p>T.157 B.90 (D) W.59 H.88</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="row user-flex">
-                                            <div class="col-sm-12 hana-dl-casting-item">
-                                                <img src="img/hana-img/profile1.jpg" alt="profile">
-                                                <p>ユメ(24)</p>
-                                                <p>T.157 B.90 (D) W.59 H.88</p>
-                                            </div>
-                                            <div class="col-sm-12 hana-dl-casting-item">
-                                                <img src="img/hana-img/profile1.jpg" alt="profile">
-                                                <p>ユメ(24)</p>
-                                                <p>T.157 B.90 (D) W.59 H.88</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 hana-dl-buttons">
+                                    <div id="menu1" class="tab-pane fade">
                                         <div class="row">
-                                            <div class="col-sm-4">
-                                                <button type="button">
-                                                    <i class="fa fa-angle-left"></i>
-                                                    前へ
-                                                </button>
+                                            <div class="col-sm-4 dl-diary-wrap">
+                                                <div class="hana-dl-diary">
+                                                    <a href="hana-dl.html">
+                                                        <img src="img/hana-img/profile1.jpg" alt="profile">
+                                                    </a>
+                                                    <p>ユメ (24)</p>
+                                                    <p>T.157 B.90 (D) W.59 H.88</p>
+                                                    <button type="button" onclick="location.href='hana-dl.html'">プロフィールを表示</button>
+                                                </div>
+                                                <div class="tab-1-title">
+                                                    <p>月刊アーカイブ</p>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-4">
-                                                <button type="button">一覧に戻る</button>
+                                            <div class="col-sm-8 dl-diary-right">
+                                                <div class="dl-diary-count">
+                                                    <p>0<span>件中</span></p>
+                                                    <div class="dl-diary-count-wrap">
+                                                        <p>0</p>
+                                                        <p class="unit">-</p>
+                                                        <p>0</p>
+                                                        <p>件表示</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 dl-diary-none">
+                                                        <p>見つかりませんでした。</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-4">
-                                                <button type="button">次へ
-                                                    <i class="fa fa-angle-right"></i>
-                                                </button>
+                                        </div>
+                                    </div>
+                                    <div id="menu2" class="tab-pane fade">
+                                        <div class="row">
+                                            <div class="col-sm-4 dl-diary-wrap">
+                                                <div class="hana-dl-diary">
+                                                    <a href="hana-dl.html">
+                                                        <img src="img/hana-img/profile1.jpg" alt="profile">
+                                                    </a>
+                                                    <p>ユメ (24)</p>
+                                                    <p>T.157 B.90 (D) W.59 H.88</p>
+                                                    <button type="button" onclick="location.href='hana-dl.html'">プロフィールを表示</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8 dl-diary-right">
+                                                <div class="dl-diary-count">
+                                                    <p>0<span>件中</span></p>
+                                                    <div class="dl-diary-count-wrap">
+                                                        <p>0</p>
+                                                        <p class="unit">-</p>
+                                                        <p>0</p>
+                                                        <p>件表示</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 dl-diary-none">
+                                                        <p>見つかりませんでした。</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -818,6 +865,5 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK9f7sXWmqQ1E-ufRXV3VpXOn
 
 <!-- ==== Main JavaScript ==== -->
 <script src="js/main.js"></script>
-
 </body>
 </html>

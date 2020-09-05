@@ -602,6 +602,9 @@ footer{
     width: 420px;
 
 }
+
+
+
 @media(max-width:1200px){
     .main-map{
         background-size: 100%;

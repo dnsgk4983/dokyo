@@ -143,8 +143,16 @@
             <!-- Header Mainbar End -->
 
             <!-- Header Navbar Start -->
-            <div
-                class="header--navbar style--1 navbar bd--color-1 bg--color-1" data-trigger="sticky">
+            
+            <div class="header--navbar style--1 navbar bd--color-1 bg--color-1" data-trigger="sticky">
+                <div class="header-title">
+                    <p>デリヘル風俗情報ならデリヘルパーク</p>
+                </div>
+                <div class="mobile-wrapper">
+                    <div class="mobile-logo">
+                        <a href="#"><img src="images/login-logo.png" alt="logo" class="logo-img"></a>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="navbar-header">
                         <button
@@ -160,8 +168,8 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-
                     <div id="headerNav" class="navbar-collapse collapse float--left">
+                        
                         <!-- Header Menu Links Start -->
                         <div class="nav-register">
                             <button><i class="fa fa-user-plus"></i>新規会員登録</button>
@@ -177,31 +185,40 @@
                             </select>
                         </div>
                         <ul class="header--menu-links nav navbar-nav main-navi-target" data-trigger="hoverIntent">
-                            <li class="active">
-                               
-                                <a href="home-tokyo.html"><i class="fas fa-home"></i>東京TOP</a>
+                            <li class="active" id="menu-home">
+                                <a href="home-tokyo.html">
+                                    <div class="menu-icon"></div>
+                                東京TOP</a>
                             </li>
-                            <li class="filter">
-                                <a href="shop.html"><i class="fas fa-shopping-cart"></i>お店を探す</a>
+                            <li class="filter" id="menu-shop">
+                                <a href="shop.html">
+                                    <div class="menu-icon"></div>
+                                    お店を探す</a>
                             </li>
-                            <li>
-                                <a href="sub.html"><i class="fas fa-female"></i>女の子を探す</a>
+                            <li id="menu-sub">
+                                <a href="sub.html">
+                                    <div class="menu-icon"></div>
+                                    女の子を探す</a>
                             </li>
-                            <li>
-                                <a href="newface.html"><i class="far fa-bookmark"></i>ニューフェイス</a>
+                            <li id="menu-face">
+                                <a href="newface.html">
+                                    <div class="menu-icon"></div>
+                                    ニューフェイス</a>
                             </li>
-                            <li>
-                                <a href="schedule.html"><i class="far fa-clock"><span>999+</span></i>出勤検索</a>
+                            <li id="menu-schedule">
+                                <a href="schedule.html"><div class="menu-icon"></div><span>999+</span>出勤検索</a>
                             </li>
-                            <li>
-                                <a href="rightnow.html"><i class="far fa-hourglass"><span>999+</span></i>今スグ!</a>
+                            <li id="menu-now">
+                                <a href="rightnow.html"><div class="menu-icon"></div><span>999+</span>今スグ!</a>
                             </li>
-                            <li class="posts">
-                                <a href="news.html"><i class="far fa-comments"></i>お店速報</a>
+                            <li class="posts" id=menu-news>
+                                <a href="news.html">
+                                    <div class="menu-icon"></div>
+                                    お店速報</a>
 
                             </li>
-                            <li class="nav-rank">
-                                <a href="value.html"><i class="fas fa-trophy"><span>999+</span></i>ランキング
+                            <li class="nav-rank" id="menu-rank">
+                                <a href="value.html"><div class="menu-icon"></div><span>999+</span>ランキング
                                     <ul class="main-sub-nav" id="nav-select">                           
                                         <li>
                                             <a href="#">店舗ランキング</a>
@@ -215,15 +232,15 @@
                                     </ul>
                                 </a>
                             </li>
-                            <li><a href="cast-diary.html"><i class="fas fa-mobile-alt"></i>写メ日記 </a>
+                            <li id="menu-diary"><a href="cast-diary.html"><i class="fas fa-mobile-alt"></i>写メ日記 </a>
                             </li>
-                            <li><a href="post-video.html"><i class="fas fa-film"></i>投稿動画 </a>
+                            <li id="menu-video"><a href="post-video.html"><i class="fas fa-film"></i>投稿動画 </a>
                             </li>
-                            <li><a href="review.html"><i class="fas fa-user"><span>999+</span></i>クチコミ </a>
+                            <li id="menu-review"><a href="review.html"><i class="fas fa-user"><span>999+</span></i>クチコミ </a>
                             </li>
-                            <li><a href="event.html"><i class="fas fa-calendar-alt"></i>イベント </a>
+                            <li id="menu-event"><a href="event.html"><i class="fas fa-calendar-alt"></i>イベント </a>
                             </li>
-                            <li><a href="offer.html"><i class="fas fa-yen-sign"></i>求人情報 </a>
+                            <li id="menu-offer"><a href="offer.html"><i class="fas fa-yen-sign"></i>求人情報 </a>
                             </li>
                       
                     </ul>
@@ -589,7 +606,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="main-rank-title">
-                                <h2><span><img src="img/rank-img/rank-title-3.png" alt="rank"></span>写メ日記アクセスランキング</h2>
+                                <h2><span><img src="img/rank-img/rank-title-2.png" alt="rank"></span>写メ日記アクセスランキング</h2>
                             </div>
                             <div class="main-rank-list">
                                 <ul>
@@ -783,7 +800,7 @@
                     </div>
                     <div class="all-navi">
                         <a href="#">
-                            <span class="navi-label"><span><img src="img/rank-img/rank-title-3.png" alt="rank"></span>写メ日記アクセスランキング</span>
+                            <span class="navi-label">キャストランキング 一覧へ</span>
                         </a>
                     </div>
                 </div>
@@ -2481,7 +2498,9 @@
                 <p class="text">Copyright © DELIPARK.COM ALL RIGHTS RESERVED.</p>
 
                 <ul class="nav social">
-                    <p>掲載店舗様・キャスト様ログイン</p>
+                    <li>
+                        <a href="#">掲載店舗様・キャスト様ログイン</a>
+                    </li>
                 </ul>
             </div>
         </div>

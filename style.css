@@ -148,6 +148,11 @@ WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SA
 \*------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
+@font-face{
+    font-family: 'dpicon';
+    src: url('fonts/dpicon.ttf');
+    src: local(※), url('fonts/dpicon.woff') format('woff');
+}
 html,body{
     position: relative;
 }
@@ -7268,6 +7273,7 @@ ul.header--menu-links.nav > li.active > a{
 .footer--copyright {
     position: relative;
     z-index: 0;
+    line-height: 20px;
 }
 
 .footer--copyright.bg--color-3 {
@@ -7286,16 +7292,16 @@ ul.header--menu-links.nav > li.active > a{
 
 .footer--copyright .text {
     margin-bottom: 0;
-    padding: 15px 0;
-    font-size: 16px;
-    line-height: 26px;
+    padding: 15px 0 0;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
 }
 
-.footer--copyright .nav > li {
-    float: left;
-}
+
 
 .footer--copyright .nav > li > a {
+    font-weight: 300;
+    font-size: 1.2rem;
     padding: 0;
 }
 
@@ -7635,30 +7641,6 @@ li{
     font-size: 1.4rem;
 }
 
-@media(max-width:560px){
-    .post-gutter-map{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
-    }
-    .post-gutter-map li{
-        margin: 10px 10px;
-    }
-    .main--content-inner{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
-    }
-    .main--content-inner div{
-        width: 50% !important;
-        padding: 0;
-        margin: 0;
-    }
-    .main--content-inner img{
-        width: 100% !important;
-    }
-
-}
 
 /* 0813add */
 
@@ -7842,19 +7824,6 @@ li{
     border-left: 1px solid #999 !important;
     border-right: 1px solid #999 !important;
     border-bottom: 1px solid #999 !important;
-}
-
-@media(max-width: 560px){
-    .girl-sum{
-        display: flex;
-        height: 150px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .girl-th{
-        display: none;
-    }
-
 }
 
 .nav-tabs li:nth-child(3){
@@ -8091,30 +8060,7 @@ footer .nav li a{
     margin-bottom: 0.4rem;
 }
 
-@media screen and (max-width: 992px){
-    .header--menu-links > li{
-        width: 100%;
-    }
-    .header--menu-links > li > a {
-        padding-top: 12px;
-        padding-bottom: 10px;
-    }
-}
 
-
-@media (min-width: 768px){
-.navbar-nav>li {
-    float: none;
-    
-    }
-.navbar-nav{
-    display: flex;
-    justify-content: space-between;
-    }
-    .phone-rank{
-        display: none !important;
-    }
-}
 
 /* 0819 */
 #headerNav .nav li:hover{
@@ -8324,13 +8270,6 @@ footer .nav li a{
 }
 .event-btn button:hover i{
     color: #fff;
-}
-
-@media(max-width:767px){
-    .main-event-item a{
-        display: block;
-        text-align: center;
-    }
 }
 
 /* first widget */
@@ -8731,7 +8670,7 @@ footer .nav li a{
     border-bottom: 1px solid #ccc;
 }
 .header--sub > .row > div {
-    display: flex;
+    display: block;
 }
 .header--sub > .row > div p{
     margin-left: 10px !important;
@@ -9163,6 +9102,9 @@ footer .nav li a{
     color: #fff;
 }
 
+
+
+
 @media(max-width: 992px){
     .select-wrap{
         width: 75%;
@@ -9283,6 +9225,105 @@ footer .nav li a{
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
+
+/* 0830 메인수정 */
+.nav-search-title{
+    background: rgba(108, 108, 108, 0.8);
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+.nav-search-area{
+    text-align: center;
+}
+.nav-search-area select{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: #000;
+}
+
+.header-title{
+    background: linear-gradient(45deg, #f15f79 50%,#d352ac 100%);
+    text-align: center;
+    display: none;
+}
+.header-title p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+.mobile-logo{
+    display: none;
+}
+
+.header--menu-links > li > a > .menu-icon{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+.menu-icon::before{
+    content: '\e910';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-shop > a > .menu-icon::before{
+    content: '\e90f';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+
+
+@media screen and (max-width: 992px){
+    .header--menu-links > li{
+        width: 100%;
+    }
+    .header--menu-links > li > a {
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar-nav>li {
+        float: none;
+        
+        }
+    .navbar-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .phone-rank{
+        display: none !important;
+    }
+}
+
+
 @media (max-width: 767px){
     .phone-rank{
         display: block;
@@ -9355,7 +9396,41 @@ footer .nav li a{
     .main-rank-list li:last-child{
         border-bottom: 1px solid #ccc !important;
     }
+    .main-event-item a{
+        display: block;
+        text-align: center;
+    }
+    .header-title{
+        display: block;
+    }
+    .header--topbar.bg--color-2.user-bg{
+        display: none;
+    }
+    .mobile-wrapper{
+        width: 100%;
+        background: #fff;
+        background: #fff;
+        border-bottom: 5px solid #e91e63;
+    }
+    .mobile-logo{
+        width: 30%;
+        padding: .5rem 0;
+        display: block;
+        margin: 0 auto;
+        
+    }
+    .mobile-logo img{
+        vertical-align: 0;
+    }
+    .header--mainbar{
+        display: none;
+    }
 }
+
+
+
+
+
 @media(max-width:568px){
     .news-frame{
         border-left: 1px solid #ccc;
@@ -9377,22 +9452,37 @@ footer .nav li a{
     }
     
 }
-/* 0830 메인수정 */
-.nav-search-title{
-    background: rgba(108, 108, 108, 0.8);
-    font-size: 16px;
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
-    padding: 10px 0;
-}
-.nav-search-area{
-    text-align: center;
-}
-.nav-search-area select{
-    width: 90%;
-    height: 30px;
-    border-radius: 5px;
-    margin: 10px 0;
-    color: #000;
+
+@media(max-width:560px){
+    .post-gutter-map{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    .post-gutter-map li{
+        margin: 10px 10px;
+    }
+    .main--content-inner{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    .main--content-inner div{
+        width: 50% !important;
+        padding: 0;
+        margin: 0;
+    }
+    .main--content-inner img{
+        width: 100% !important;
+    }
+    .girl-sum{
+        display: flex;
+        height: 150px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .girl-th{
+        display: none;
+    }
+
 }

@@ -1867,29 +1867,70 @@
     background: #ccc;
     left: 0;
     right: 0;
-    bottom: 9px;
+    bottom: 0px;
+    z-index: 5;
 }
-.hana-dl-tabs > ul {
+.hana-dl-tabs > ul.hana-dl-tab {
     display: flex;
     padding-left: 1rem;
+    margin-top: 0;
 }
-.hana-dl-tabs > ul > li{
+.hana-dl-tabs > ul.hana-dl-tab > li{
+    width: auto;
     height: 41px;
     border: none;
     border: 1px solid #ccc;
+    background: none !important;
     border-bottom: none;
     border-right: none;
+    position: relative;
 }
-.hana-dl-tabs > ul > li:last-child{
+.hana-dl-tabs > .nav-tabs > li > a {
+    border: none !important;
+}
+ul.hana-dl-tab > li.active::after{
+    width: auto;
+    height: 1px;
+    background: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    z-index: 999;
+}
+ul.hana-dl-tab > li.active > a{
+    font-weight: 500 !important;
+    color: #333 !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+ul.hana-dl-tab > li:focus > a,
+ul.hana-dl-tab > li:active > a{
+    border: none !important;
+    border-radius: 0 !important;
+    color: #333 !important;
+}
+.hana-dl-tab > li:hover > a{
+    color: #bb002f !important;
+}
+.hana-dl-tabs > ul.hana-dl-tab > li:last-child{
     border-right: 1px solid #ccc;
 }
-.hana-dl-tabs button{
+.hana-dl-tabs > button{
     height: 31px;
     border: none;
     color: #fff;
     padding: 5px 15px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #d352ac 50%, #f15f79 100%);;
+    background: linear-gradient(45deg, #61045F 50%,#AA076B 100%);
+    transition: all .3s;
+}
+.hana-dl-tabs > button > i{
+    margin-right: .5rem;
+}
+.hana-dl-tabs > button:hover{
+    opacity: .7;
 }
 
 
@@ -1935,7 +1976,7 @@
         color: #fff;
         padding: 5px 15px;
         border-radius: 5px;
-        background: linear-gradient(45deg, #d352ac 50%, #f15f79 100%);
+        background: linear-gradient(45deg, #61045F 50%,#AA076B 100%);
         transition: all .3s;
   }
   .hana-dl-btn button:hover{
@@ -2190,6 +2231,81 @@
         opacity: .7;
     }
     
+    /* hana-dl-diary tab area */
+    .dl-diary-wrap{
+        margin: 15px 0 !important;
+    }
+    .hana-dl-diary > a > img{
+        transition: all .3s;
+    }
+    .hana-dl-diary > a:hover > img{
+        opacity: .7;
+    }
+    .hana-dl-diary{
+        line-height: 16px;
+        text-align: center;
+    }
+    .hana-dl-diary > p:nth-child(2){
+        margin-top: 1.5rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+    .hana-dl-diary > p:nth-child(3){
+        margin: 0;
+        font-weight: lighter;
+    }
+    .hana-dl-diary > button{
+        background: linear-gradient(45deg, #61045F 50%,#AA076B 100%);
+        border: none;
+        color: #fff;
+        transition: all .3s;
+        padding: .5rem 1rem;
+        margin: 1.5rem 0;
+        border-radius: .5rem;
+    }
+    .dl-diary-right{
+        padding: 0 1.5rem !important;
+        margin: 1.5rem 0 !important;
+    }
+    .dl-diary-count{
+        display: flex;
+    }
+    .dl-diary-count > p{
+        font-weight: 500;
+    }
+    .dl-diary-count > p > span{
+        font-weight: 300;
+        font-size: 1.2rem;
+        margin-left: .15rem;
+    }
+    .dl-diary-count-wrap{
+        display: flex;
+        margin-left: 1.5rem;
+    }
+    .dl-diary-count-wrap > .unit {
+        margin: 0 .5rem;
+        vertical-align: -3px;
+    }
+    .dl-diary-count-wrap > p:last-child{
+        margin-left: .3rem;
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+    .dl-diary-none{
+        text-align: center;
+    }
+    .header-title{
+        background: linear-gradient(45deg, #f15f79 50%,#d352ac 100%);
+        text-align: center;
+        display: none;
+    }
+    .header-title p{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+
 
   @media(max-width:1200px){
     #shop-info-area{
@@ -2435,6 +2551,9 @@
         padding: 0;
     }
     .hana-widget{
+        padding: 0;
+    }
+    .hana-dl-wrapper{
         padding: 0;
     }
 }

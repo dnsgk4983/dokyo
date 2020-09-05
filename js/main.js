@@ -785,7 +785,7 @@ Author URI  : https://themeforest.net/user/themelooks
     $(".nav-rank").mouseleave(function(){
         $('.nav-rank a').css("color","#fff")
     });
-
+    
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
         slidesPerView: 4,
@@ -809,7 +809,8 @@ Author URI  : https://themeforest.net/user/themelooks
         //     disableOnInteraction: false,
         //   },
         //   loop:true
-      });
-
+    });
+    
 })(jQuery);
+
 
