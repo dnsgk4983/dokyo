@@ -7507,9 +7507,15 @@ body.isScrolling #backToTop {
 
 
 .post--gutter-1{
+    display: flex;
     border-top: 2px solid #000;
     padding: 1.2rem 1.2rem 1.2rem 5.2rem;
     border-bottom: 1px solid #c7c7c7;
+}
+.post--gutter-1 > i {
+    font-weight: 900;
+    font-size: 3.8rem;
+    margin-right: 1.5rem;
 }
 .post--gutter-1 h3{
     margin: 0;
@@ -8645,7 +8651,7 @@ footer .nav li a{
     font-size: 12px;
     vertical-align: 5px;
     margin-left: 3px;
-    padding: 2px;
+    padding: 0 .2rem;
     border-radius: 3px;
     color: #fff;
 }
@@ -9174,9 +9180,11 @@ footer .nav li a{
 }
 
 /* 메뉴수정 20200828 */
-.tab-content .main-rank-title img{
-    vertical-align: middle;
-    margin-right: .4rem;
+#top-center-ranking::before{
+    content: '\e904';
+    color: #f97f22;
+    font-family: 'dpicon';
+    font-size: 3.8rem;
 }
 .pc-rank .col-md-4{
     padding: 0;
@@ -9203,6 +9211,12 @@ footer .nav li a{
 .pc-rank .main-rank-title h2{
     margin: 0;
     padding: 15px 0;
+}
+.top-center-title-wrap::before{
+    content: '\e913';
+    font-family: 'dpicon';
+    font-size: 2rem;
+    margin-right: .4rem;
 }
 .pc-rank .col-md-4:first-child h2{
     color: #3c5e9c;
@@ -9297,7 +9311,116 @@ footer .nav li a{
     margin-bottom: .4rem;
     line-height: 1;
 }
-
+#menu-sub > a > .menu-icon::before{
+    content: '\e90e';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-face > a > .menu-icon::before{
+    content: '\e906';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-schedule > a > .menu-icon::before{
+    content: '\e90d';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-now > a > .menu-icon::before{
+    content: '\e907';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-news > a > .menu-icon::before{
+    content: '\e908';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-rank > a > .menu-icon::before{
+    content: '\e904';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-diary > a > .menu-icon::before{
+    content: '\e900';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-video > a > .menu-icon::before{
+    content: '\e901';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-review > a > .menu-icon::before{
+    content: '\e902';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-event > a > .menu-icon::before{
+    content: '\e905';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
+#menu-offer > a > .menu-icon::before{
+    content: '\e90c';
+    font-family: "dpicon";
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+    line-height: 1;
+}
 
 @media screen and (max-width: 992px){
     .header--menu-links > li{
