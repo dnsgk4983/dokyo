@@ -9661,6 +9661,9 @@ footer .nav li a{
         height: 40px;
         font-size: 1rem;
     }
+    .rank-tab li a{
+        letter-spacing: -2px;
+    }
 }
 
 
