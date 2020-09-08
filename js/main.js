@@ -785,6 +785,16 @@ Author URI  : https://themeforest.net/user/themelooks
     $(".nav-rank").mouseleave(function(){
         $('.nav-rank a').css("color","#fff")
     });
+
+    $('.navbar-header button').click(function(){
+        $('.navbar-background').addClass('active');
+    });
+    $('.main-content--section').click(function(){
+        $('.navbar-background').removeClass('active');
+    });
+    $("#headerNav").click(function(){
+        $('.navbar-background').removeClass('active');
+    });
     
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,

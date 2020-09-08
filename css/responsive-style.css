@@ -134,7 +134,20 @@ WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SA
         margin-top: 28px;
         margin-bottom: 28px;
     }
-
+    .navbar-background{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        transition: 3s;
+        z-index: 998;
+    }
+    .navbar-background.active{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
     .header--navbar .navbar-collapse {
         display: block !important;
         position: fixed;
@@ -151,7 +164,7 @@ WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SA
         overflow: visible !important;
         -webkit-transition: left .55s ease-in-out;
         transition: left .55s ease-in-out;
-        z-index: 999;
+        z-index: 9999;
         padding: 3rem 0;
     }
 
