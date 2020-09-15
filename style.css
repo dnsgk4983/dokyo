@@ -9131,19 +9131,24 @@ footer .nav li a{
     margin-top: 15px !important;
 }
 .select-wrap{
-    width: 50%;
+    width: 70%;
     display: flex;
 }
+.select-wrap-1{
+    width: 100%;
+}
 .select-wrap select{
-    width: calc(50%);
+    width: calc(100%);
 }
 .cross{
     margin: .8rem .8rem;
 }
 .select-wrap input{
-    width: calc(50%);
+    width: calc(100%);
 }
 .button-orange{
+    width: 50%;
+    justify-content: center;
     height: 40px;
     margin-left: 15px;
     display: flex;
@@ -9151,13 +9156,14 @@ footer .nav li a{
     background: orange;
     border: none;
     border-radius: 5px;
-    padding: 3px 15px;
 }
 .button-orange i{
+    font-size: 1.6rem;
     margin-right: 5px;
     color: #fff;
 }
-.search-label p{
+.search-label{
+    font-size: 1.4rem;
     color: #fff;
 }
 
@@ -9183,7 +9189,7 @@ footer .nav li a{
     margin-bottom: 15px;
 }
 #header-area-navigation>.row>ul>li{
-    width: 7%;
+    width: 13%;
     border: 1px solid #ccc;
     box-sizing: border-box;
     text-align: center;
@@ -9500,6 +9506,11 @@ footer .nav li a{
 }
 
 
+@media (max-width:1200px){
+    .news-frame{
+        padding: 5.2rem 1rem;
+    }
+}
 @media screen and (max-width: 992px){
     .header--menu-links > li{
         width: 100%;
@@ -9510,6 +9521,9 @@ footer .nav li a{
     }
     .main-sub-nav{
         display: none !important;
+    }
+    .news-frame{
+        padding: 16.6rem 1rem;
     }
 }
 
@@ -9661,9 +9675,11 @@ footer .nav li a{
         height: 40px;
         font-size: 1rem;
     }
+    .news-frame{
+        padding: 5.2rem 1rem;
+        border-left: 1px solid #ccc;
+    }
 }
-
-
 
 
 
@@ -9722,4 +9738,11 @@ footer .nav li a{
         display: none;
     }
 
+}
+
+/* 20200915 added */
+.header--mainbar > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
