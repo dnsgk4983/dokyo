@@ -2321,6 +2321,17 @@ ul.hana-dl-tab > li:active > a{
     .mg-l30{
         margin-left: 3rem;
     }
+    /* 0918 */
+.shop-left-info{
+    margin-left: 15px;
+    align-items: baseline;
+}
+.shop-left-info > .info-yen{
+    margin-bottom: 3%;
+}
+.shop-ico-wrap.flex-center{
+    justify-content: space-between;
+}
 
 
   @media(max-width:1200px){
@@ -2368,6 +2379,9 @@ ul.hana-dl-tab > li:active > a{
     }
     .hana-archive p{
         font-size: 16px;
+    }
+    .shop-info .info{
+        font-size: 14px;
     }
 }
 @media(max-width:992px){
@@ -2422,7 +2436,16 @@ ul.hana-dl-tab > li:active > a{
     .hana-dl-left{
         width: 33.333333%;
     }
-    
+    .shop-ico-wrap.flex-center{
+        display: block;
+        flex-direction: column;
+    }
+    .shop-info{
+        height: inherit;
+    }
+    .shop-left-info{
+        margin-left: 0;
+    }
 }
 
 @media (max-width:767px) {
@@ -2670,3 +2693,5 @@ ul.hana-dl-tab > li:active > a{
         letter-spacing: 0;
     }
 }
+
+

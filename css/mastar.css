@@ -604,6 +604,11 @@ footer{
 }
 
 
+@media(min-width:1210px){
+    .sticky-wrapper{
+        height: 74px;
+    }
+}
 
 @media(max-width:1200px){
     .main-map{
