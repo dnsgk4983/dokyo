@@ -2398,9 +2398,9 @@ ul.hana-dl-tab > li:active > a{
     .shop-line{
         display: none;
     }
-    .info.info-tell{
+    /* .info.info-tell{
         margin-top: 5px;
-    }
+    } */
     .shop-price-featured{
         width: 105%;
         margin-left: 0;
@@ -2436,6 +2436,7 @@ ul.hana-dl-tab > li:active > a{
     .hana-dl-left{
         width: 33.333333%;
     }
+        /* 0919 */
     .shop-ico-wrap.flex-center{
         display: block;
         flex-direction: column;
@@ -2445,6 +2446,18 @@ ul.hana-dl-tab > li:active > a{
     }
     .shop-left-info{
         margin-left: 0;
+    }
+    .shop-info.shop-right-info{
+        align-items: baseline;
+    }
+    .shop-left-info > .info-yen{
+        margin-bottom: 1%;
+    }
+    .flex-center > .shop-info > .info-time{
+        margin-bottom: 0;
+    }
+    .shop-info.shop-right-info .info.info-tell i{
+        margin: 0;
     }
 }
 
