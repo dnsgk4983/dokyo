@@ -604,7 +604,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 65px;
 }
 
 .shop-info .info{
@@ -627,7 +626,6 @@
 }
 .info.info-tell i{
     padding: .3rem;
-    margin-left: -.35rem;
 }
 
 .shop-price-featured{
@@ -780,6 +778,12 @@
 }
 .value-info .info{
     margin: 5px 0;
+}
+.info-yen{
+    margin-top: 3%;
+}
+.info-marker, .info-time{
+    margin-bottom: 3%;
 }
 .info-yen i, .info-marker i {
     padding: .5rem !important;
@@ -2323,7 +2327,6 @@ ul.hana-dl-tab > li:active > a{
     }
     /* 0918 */
 .shop-left-info{
-    margin-left: 15px;
     align-items: baseline;
 }
 .shop-left-info > .info-yen{
@@ -2332,7 +2335,15 @@ ul.hana-dl-tab > li:active > a{
 .shop-ico-wrap.flex-center{
     justify-content: space-between;
 }
-
+.icon-wrap{
+    padding: 0;
+}
+.icon-wrap > .shop-info{
+    flex-direction: column;
+}
+.shop-right-info{
+    display: block;
+}
 
   @media(max-width:1200px){
     #shop-info-area{
@@ -2548,7 +2559,6 @@ ul.hana-dl-tab > li:active > a{
     }
     .info.info-tell{
         margin: 0;
-        margin-left: 2rem;
     }
     .shop-price-featured {
         width: 100%;
@@ -2619,6 +2629,19 @@ ul.hana-dl-tab > li:active > a{
     }
     .hana-dl-wrapper{
         padding: 0;
+    }
+    .row.flex-767{
+        display: flex;
+        align-items: center;
+    }
+    .shop-info.shop-right-info{
+        margin-left: 16px;
+    }
+    .shop-left-info > .info-yen{
+        margin-bottom: 3%;
+    }
+    .shop-info .info i{
+        padding: .5rem;
     }
 }
 
