@@ -8896,6 +8896,9 @@ footer .nav li a{
     .nav-tabs.ad-tab > li > a {
         font-size: 0.9rem !important;
     }
+    .all-navi a{
+        padding: 1.2rem 3rem;
+    }
 }
 @media (min-width: 993px){
     .nav-register{
@@ -9505,10 +9508,17 @@ footer .nav li a{
     color: #333;
 }
 
-
+@media (min-width: 1201px){
+    #sticky-wrapper{
+        height: 74px !important;
+    }
+}
 @media (max-width:1200px){
     .news-frame{
         padding: 5.2rem 1rem;
+    }
+    .header-center-wrap.float--left{
+        display: none;
     }
 }
 @media screen and (max-width: 992px){
@@ -9525,7 +9535,11 @@ footer .nav li a{
     .news-frame{
         padding: 16.6rem 1rem;
     }
+    #sticky-wrapper{
+        height: 61px !important;
+    }
 }
+
 
 @media (min-width: 768px){
     .navbar-nav>li {
